@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJACK Winter of Code</title>
+    
+    <meta name="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+		<META NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="NJACK Winter of Code">
+		<meta itemprop="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+		<meta itemprop="image" content="http://nwoc.njack-iitp.org/nwocLogo.jpg">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@njackiitp">
+		<meta name="twitter:title" content="NJACK Winter of Code">
+		<meta name="twitter:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+		<meta name="twitter:creator" content="@njackiitp">
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content="http://nwoc.njack-iitp.org/nwocLogo.jpg">
+	
+		<!-- Open Graph data -->
+		<meta property="og:title" content="NJACK Winter of Code" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://nwoc.njack-iitp.org/" />
+		<meta property="og:image" content="http://nwoc.njack-iitp.org/nwocLogo.jpg" />
+		<meta property="og:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+		<meta property="og:site_name" content="NWoC" />
+		<meta property="article:published_time" content="2017-10-11T05:59:00+01:00" />
+		<meta property="article:modified_time" content="2017-10-12T19:08:47+01:00" />
+		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
+<meta property="article:tag" content="NWoC" />
+    
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.nwoc-drawer-item').click(function() {
+          $( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+      <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
+        <div class="mdl-layout__header-row">
+          <a href="index.html" style="text-decoration:none;">
+            <span class="mdl-layout-title nwoc-menu-title">
+              <span class="nwoc-menu-njack">NJACK</span> Winter of Code
+            </span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link nwoc-menu-item" href="index.html#how-it-works">How it works</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="index.html#timeline">Timeline</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="index.html#register">Register</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="archive.html">Archive</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="mdl-layout__drawer nwoc-drawer">
+        <div class="nwoc-close-button-div">
+          <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link nwoc-drawer-item" href="index.html#how-it-works">How it works</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="index.html#timeline">Timeline</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="index.html#register">Register</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="archive.html">Archive</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content">
+        <div class="nwoc-landing-header">
+          <img class="nwoc-big-logo" src="images/nwoc-logo.png"/>
+          <div class="nwoc-slogan">
+            <p>NWoC helps new students understand the paradigm of Open Source contributions and 
+              give them real world development experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="nwoc-content">
+          <a id="about"></a>
+          <h3>About</h3>
+          <p>NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions.
+					</p>
+          
+          <a id="how-it-works"></a>
+					<h3>How it works?</h3>
+          <p>Participants can apply for the program either as a student or as a mentor. Mentors are selected by a selection process. The selected mentors propose projects, the best of which are chosen to be included in the program. Students work on these projects in their winter vacations. The mentors mentor the pull requests and overall work on their project by various contributors throughout the coding period of the program. At the end of the coding period, the students are compared on the basis of most contributions.
+             <br><br>
+             For more info, please download the student or mentor manual:
+          </p>
+
+					<div class="mdl-grid nwoc-manuals">
+						<div class="mdl-cell mdl-cell--6-col">
+      				<a href="NWoC_StudentManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Student Manual</a>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
+       				<a href="NWoC_MentorManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Mentor Manual </a>
+						</div>
+					</div>
+
+          <a id="timeline"></a>
+          <h3>Timeline</h3>
+          <table class="nwoc-timeline" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Program Announced</div>
+                  <div class="nwoc-timeline-date">28th October, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">NJACK Winter of code is released online and students and mentors are informed about the program.</div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Mentor Registration Starts</div>
+                  <div class="nwoc-timeline-date">1st November, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Interested mentors sign up on the website and optionally register their projects on the website.</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Student Registration Starts</div>
+                  <div class="nwoc-timeline-date">1st November, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Interested students begin applying to the program.</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Mentor Registration Ends</div>
+                  <div class="nwoc-timeline-date">15th November, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Mentors must register themselves by 15th November, 2018.</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Projects Announced</div>
+                  <div class="nwoc-timeline-date">22nd November, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Organizing team selects projects and announces them.</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Coding Period Starts</div>
+                  <div class="nwoc-timeline-date">1st December, 2018</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Registered students start contributing to selected projects.</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Coding Period Ends</div>
+                  <div class="nwoc-timeline-date">6th January, 2019</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Students conclude with their contributions for the program and file reports. Mentors file feedback.</div>
+                </td>
+              </tr>
+
+			        <tr>
+                <td class="nwoc-timeline-left">
+                  <div class="nwoc-timeline-heading">Results Announced</div>
+                  <div class="nwoc-timeline-date">10-15th January, 2019</div>
+                </td>
+                <td class="nwoc-timeline-divider"></td>
+                <td class="nwoc-timeline-right">
+                  <div class="nwoc-timeline-desc">Results announced.</div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <br><br>
+          <p>Follow NJACK on <a href="https://www.facebook.com/njack.iitp/">Facebook</a> and <a href="https://twitter.com/njackiitp">Twitter</a> for updates.</p>
+
+          <a id="register"></a>
+          <h3>Register</h3>
+          <div class="mdl-grid nwoc-manuals">
+		        <div class="mdl-cell mdl-cell--6-col">
+      				<a href="https://goo.gl/forms/zmdQoRlebeTtKbLl2" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Student Registration</a>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
+       				<a href="https://goo.gl/forms/jIdu0ZzUPOBbDqmo1" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Mentor Registration</a>
+						</div>
+					</div>
+          <br>
+          <p>Make sure to join the <a href="https://gitter.im/NWoC/NWoC2018">Gitter channel</a>.</p>
+
+          <h3>Previous projects</h3>
+          <p>NWoC 2017 saw a huge participation of more than 200 students from all across the country. 
+             <br>
+             16 major projects were shortlisted and were actively mentored by 19 mentors.
+          </p>
+          <div class="mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/IITP-Connect">IITP-Connect</a>
+                <div class="repo-desc">The Android app for the IIT Patna student community by the student community.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Java</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 13</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 24</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 7</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 2</li>-->
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/lterm">lterm</a>
+                <div class="repo-desc">Online bash terminal(emulator) tutorial. A step by step tutorial for the bash shell.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Javascript</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 8</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 16</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 5</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 3</li>-->
+                </ul>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/WIKIPEDIA-READER">WIKIPEDIA-READER</a>
+                <div class="repo-desc">Reads the content in wikipedia page of the query.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Java</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 8</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 16</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 8</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 1</li>-->
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/E-voting-portal">E-voting-portal</a>
+                <div class="repo-desc">An internet based electronic voting system.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> PHP</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 9</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 15</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 3</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 0</li>-->
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/Memegenerator">Memegenerator</a>
+                <div class="repo-desc">Meme-generator is an app to create simple memes by adding image and text in the top and bottom section of image. It's still under improvement.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Java</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 15</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 25</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 5</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 0</li>-->
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="nwoc-repo-card">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
+                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/nervy-notebooks">nervy-notebooks</a>
+                <div class="repo-desc">Notebook regarding neural networks.</div>
+                <ul class="repo-stats">
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"/> 8</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/issue-opened.svg"/> 17</li>
+                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"/> 4</li>
+                  <!--<li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"/> 0</li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <p>Check the <a href="archive.html">Archive</a> for more.</p>
+          <h3>Previous Sponsors</h3>
+          <a href="https://github.com">
+            <img class="nwoc-sponsor" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/logo-github.svg"/>
+          </a>
+          <br>
+          <br>
+          <h4>Tell your friends about NWoC</h4>
+          <div class="mdl-grid nwoc-manuals">
+		        <div class="mdl-cell mdl-cell--6-col">
+      				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//nwoc.njack-iitp.org/" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Share on Facebook</a>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
+       				<a href="https://twitter.com/home?status=https%3A//nwoc.njack-iitp.org/" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Share on Twitter </a>
+						</div>
+					</div>
+        </div>
+        
+        <footer class="mdl-mini-footer">
+          <div class="nwoc-footer">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">© NJACK 2018</div>
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]">Email</a></li>
+                <li><a href="https://www.facebook.com/njack.iitp/">Facebook</a></li>
+                <li><a href="https://twitter.com/njackiitp">Twitter</a></li>
+                <li><a href="https://github.com/Njack-IITP/">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </body>
+</html>
