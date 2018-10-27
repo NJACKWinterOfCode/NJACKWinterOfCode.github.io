@@ -1,0 +1,277 @@
+/* Indigo Blue theme
+ * Indigo: #3F51B5 = rgba(63,81,181)
+ * Blue: #2196F3 = rgba(33.150,243)
+ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2,h3 {
+    margin-top: 48px;
+}
+
+.nwoc-header {
+  background-color: white;
+}
+
+.nwoc-menu-njack {
+  color: rgba(31,136,245,0.9) !important;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nwoc-menu-title {
+  color: rgba(0,0,0,.54) !important;
+  text-decoration: none;
+}
+
+.nwoc-menu-item, .nwoc-drawer-item {
+  color: rgba(0,0,0,.54) !important;
+  font-size: 1.2rem; !important;
+  font-weight: 600;
+  padding: 0 15px !important;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nwoc-menu-item:hover {
+  color: rgba(31,136,245,.9) !important;
+}
+
+.nwoc-close-button-div {
+  text-align: right;
+}
+
+.nwoc-close-button {
+  height: 56px;
+  color: rgba(0,0,0,.54);
+  min-width: 64px !important;
+}
+
+.nwoc-close-button:hover {
+  color: rgba(31,136,245,.9);
+}
+
+.mdl-layout__header-row {
+  padding: 0 10px 0 60px;
+}
+
+.mdl-layout__content {
+  border-top: solid 1px rgba(0,0,0,.4);
+}
+.mdl-layout__container {
+  position: static;
+}
+
+.mdl-layout__drawer-button, .mdl-layout__drawer {
+  left: initial;
+  right: 0;
+}
+
+.mdl-layout__drawer {
+  transform:translateX(250px);
+}
+
+.mdl-layout__drawer-button {
+  color: rgba(0,0,0,.54) !important;
+}
+
+.mdl-layout__drawer .mdl-navigation {
+  padding-top: 0;
+}
+
+.mdl-button {
+  min-width: 232px;
+}
+
+@media screen and (min-width: 961px) {
+  .mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .mdl-layout__header-row {
+    padding: 0 10px 0 20px;
+  }
+  
+  .nwoc-menu-item, .nwoc-drawer-item {
+    padding: 12px 15px !important;
+  }
+}
+
+.nwoc-landing-header {
+  background-image: url("images/winter_back.jpg");
+  background-color: #90CAF9;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nwoc-big-logo {
+  position: absolute;
+  width: 400px;
+  left: calc(50vw - 200px);
+  top: 75px;
+}
+
+.nwoc-slogan p {
+  color: white;
+  width: 500px;
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: 340px;
+  font-size: 1.4em !important;
+  line-height: 1.4em !important;
+  text-align: justify;
+  text-shadow: 1px 1px 3px black;
+}
+
+.nwoc-content {
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 15px 1px;
+}
+
+.nwoc-manuals, .nwoc-manuals div {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.nwoc-timeline {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.nwoc-timeline td {
+  vertical-align: top;
+	padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.nwoc-timeline-divider::before {
+    border: 5px solid #2196F3;
+    background-color: #90CAF9;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: 15px;
+    left: -8px;
+    position: absolute;
+}
+
+.nwoc-timeline-divider {
+    width: 6px;
+    background-color: #2196F3;
+    position: relative;
+}
+
+.nwoc-timeline-left {
+  padding-right: 25px;
+}
+
+.nwoc-timeline-right {
+  padding-left: 25px;
+}
+
+.nwoc-timeline-heading {
+  font-size: 1.4em !important;
+}
+
+.nwoc-timeline-date {
+  font-size: 1.2em !important;
+  color: rgba(0,0,0,.54);
+}
+
+.nwoc-timeline-desc {
+  font-size: 1.2em !important;
+}
+
+.nwoc-repo-card {
+  margin-bottom: 10px;
+  padding: 18px;
+  max-width: 328px;
+  height: 150px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+.nwoc-repo-card .repo-title {
+  font-size: 1.2em;
+  color: #1976D2;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.nwoc-repo-card .repo-title:hover {
+  text-decoration: underline;
+}
+
+.nwoc-repo-card .repo-desc {
+  margin-top: 10px;
+}
+
+.nwoc-repo-card img {
+  opacity: 0.6;
+  padding-bottom: 3px;
+}
+
+.nwoc-repo-card .repo-stats {
+  position: absolute;
+  bottom: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.repo-stats li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.nwoc-sponsor {
+  height: 3em;
+}
+
+.mdl-mini-footer {
+  padding: 32px 30px;
+}
+
+.nwoc-footer {
+  width: 750px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .nwoc-landing-header {
+    height: 420px;
+  }
+
+  .nwoc-big-logo{
+    top: 70px;
+    width: 300px;
+    left: calc(50vw - 150px);
+  }
+
+  .nwoc-slogan p{
+    top: 270px;
+    width: 300px;
+    left: calc(50vw - 150px);
+    font-size: 1.2em !important;
+  }
+
+  .nwoc-content {
+      padding: 1px 30px;
+  }
+}
