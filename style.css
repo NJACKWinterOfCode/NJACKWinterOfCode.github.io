@@ -109,7 +109,7 @@ h2,h3 {
 .nwoc-landing-header {
   background-image: url("images/winter_back.jpg");
   background-color: #90CAF9;
-  height: 550px;
+  height: 715px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,6 +132,23 @@ h2,h3 {
   line-height: 1.4em !important;
   text-align: justify;
   text-shadow: 1px 1px 3px black;
+}
+
+.nwoc-header-sponsors{
+  width: 500px;
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: 510px;
+  text-align: center;
+}
+
+.nwoc-header-sponsors p {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.nwoc-header-sponsors img {
+  width: 70px;
 }
 
 .nwoc-content {
@@ -197,6 +214,10 @@ h2,h3 {
   font-size: 1.2em !important;
 }
 
+.nwoc-current-sponsors {
+  height: 160px;
+}
+
 .nwoc-repo-card {
   margin-bottom: 10px;
   padding: 18px;
@@ -255,7 +276,7 @@ h2,h3 {
 
 @media screen and (max-width: 960px) {
   .nwoc-landing-header {
-    height: 420px;
+    height: 570px;
   }
 
   .nwoc-big-logo{
@@ -269,6 +290,20 @@ h2,h3 {
     width: 300px;
     left: calc(50vw - 150px);
     font-size: 1.2em !important;
+  }
+
+  .nwoc-header-sponsors {
+    top: 410px;
+    width: 300px;
+    left: calc(50vw - 150px);
+  }
+  
+  .nwoc-header-sponsors img {
+    width: 60px;
+  }
+
+  .nwoc-header-sponsors p {
+    font-size: 1em !important;
   }
 
   .nwoc-content {
