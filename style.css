@@ -8,11 +8,15 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h2,h3 {
     margin-top: 48px;
+}
+
+a {
+  color: #1976D2;
 }
 
 .nwoc-header {
@@ -276,6 +280,10 @@ h2,h3 {
 .nwoc-footer {
   width: 750px;
   margin: 0 auto;
+}
+
+.nwoc-contact {
+  width: 160px;
 }
 
 @media screen and (max-width: 960px) {
