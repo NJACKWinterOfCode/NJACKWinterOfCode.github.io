@@ -111,7 +111,7 @@ a {
 }
 
 .nwoc-landing-header {
-  background-image: url("images/winter_back.jpg");
+  background-image: url("/images/winter_back.jpg");
   background-color: #90CAF9;
   height: 715px;
   background-position: center;
