@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: 
+Allow: /archive.html
+Allow: /contact.html
+Allow: /codeofconduct.html
+Allow: /
+
+Sitemap: https://njackwinterofcode.github.io/sitemap.xml

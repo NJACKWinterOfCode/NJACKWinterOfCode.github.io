@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121199486-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121199486-2');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NJACK Winter of Code</title>
@@ -31,9 +41,10 @@
 		<meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
 		<meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
 		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
-<meta property="article:tag" content="NWoC" />
+    <meta property="article:tag" content="NWoC" />
     
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://njackwinterofcode.github.io"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -52,18 +63,18 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
       <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
         <div class="mdl-layout__header-row">
-          <a href="index.html" style="text-decoration:none;">
+          <a href="/" style="text-decoration:none;">
             <span class="mdl-layout-title nwoc-menu-title">
               <span class="nwoc-menu-njack">NJACK</span> Winter of Code
             </span>
           </a>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link nwoc-menu-item" href="#how-it-works">How it works</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="#timeline">Timeline</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="#register">Register</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="contact.html">Contact</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="archive.html">Archive</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/#how-it-works">How it works</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/#timeline">Timeline</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
           </nav>
         </div>
       </header>
@@ -75,17 +86,17 @@
           </button>
         </div>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link nwoc-drawer-item" href="#how-it-works">How it works</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="#timeline">Timeline</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="#register">Register</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="contact.html">Contact</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="archive.html">Archive</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/#how-it-works">How it works</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/#timeline">Timeline</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
         </nav>
       </div>
 
       <main class="mdl-layout__content">
         <div class="nwoc-landing-header">
-          <img class="nwoc-big-logo" src="images/nwoc-logo.png"/>
+          <img class="nwoc-big-logo" src="/images/nwoc-logo.png"/>
           <div class="nwoc-slogan">
             <p>NWoC helps new students understand the paradigm of Open Source contributions and 
               give them real world development experience.
@@ -93,8 +104,8 @@
           </div>
           <div class="nwoc-header-sponsors">
               <p>Sponsored By:</p>
-              <a href="https://www.jetbrains.com/" target="_blank"><img src="images/jetbrains-variant-2-cropped.png"/></a>
-              <a href="https://www.digitalocean.com"/ target="_blank"><img src="images/DO_Logo_Vertical_White.png"/></a>
+              <a href="https://www.jetbrains.com/" target="_blank"><img src="/images/jetbrains-variant-2-cropped.png"/></a>
+              <a href="https://www.digitalocean.com"/ target="_blank"><img src="/images/DO_Logo_Vertical_White.png"/></a>
           </div>
         </div>
 
@@ -113,10 +124,10 @@
 
 					<div class="mdl-grid nwoc-manuals">
 						<div class="mdl-cell mdl-cell--6-col">
-      				<a href="NWoC_StudentManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Student Manual</a>
+      				<a href="/NWoC_StudentManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Student Manual</a>
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
-       				<a href="NWoC_MentorManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Mentor Manual </a>
+       				<a href="/NWoC_MentorManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Mentor Manual </a>
 						</div>
 					</div>
 
@@ -213,15 +224,15 @@
       				<a href="https://goo.gl/forms/zmdQoRlebeTtKbLl2" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Student Registration</a>
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
-       				<a href="https://goo.gl/forms/jIdu0ZzUPOBbDqmo1" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Mentor Registration</a>
+       				<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" disabled>Mentor Registration</a>
 						</div>
 					</div>
           <br>
-          <p>Make sure to join the <a href="https://gitter.im/NWoC/NWoC2018" target="_blank">Gitter channel</a>. Also, please read the <a href="codeofconduct.html">Code of Conduct</a>.</p>
+          <p>Make sure to join the <a href="https://gitter.im/NWoC/NWoC2018" target="_blank">Gitter channel</a>. Also, please read the <a href="/codeofconduct.html">Code of Conduct</a>.</p>
 
           <h3>Sponsors</h3>
-          <a href="https://www.jetbrains.com/" target="_blank"><img class="nwoc-current-sponsors" src="images/jetbrains-variant-1.png"/></a>
-          <a href="https://www.digitalocean.com" target="_blank"><img class="nwoc-current-sponsors" src="images/DO_Logo_Vertical_Blue.png"/></a>
+          <a href="https://www.jetbrains.com/" target="_blank"><img class="nwoc-current-sponsors" src="/images/jetbrains-variant-1.png"/></a>
+          <a href="https://www.digitalocean.com" target="_blank"><img class="nwoc-current-sponsors" src="/images/DO_Logo_Vertical_Blue.png"/></a>
 
           <h3>Previous projects</h3>
           <p>NWoC 2017 saw a huge participation of more than 200 students from all across the country. 
@@ -320,7 +331,7 @@
             </div>
           </div>
           <br>
-          <p>Check the <a href="archive.html" target="_blank">Archive</a> for more.</p>
+          <p>Check the <a href="/archive.html" target="_blank">Archive</a> for more.</p>
           <h3>Previous Sponsors</h3>
           <a href="https://github.com" target="_blank">
             <img class="nwoc-sponsor" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/logo-github.svg"/>
