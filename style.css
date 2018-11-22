@@ -264,6 +264,11 @@ a {
   margin: 0;
 }
 
+.nwoc-repo-card .repo-mentors {
+  position: absolute;
+  bottom: 42px;
+}
+
 .repo-stats li {
   display: inline-block;
   margin-right: 12px;
