@@ -327,3 +327,12 @@ a {
       padding: 1px 30px;
   }
 }
+
+.leaderboard .handle {
+  text-align: left;
+  padding: 0 30px;
+}
+
+.leaderboard td,th {
+  text-align: center;
+}
