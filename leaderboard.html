@@ -107,7 +107,7 @@
                 var table = '<table class=\'leaderboard\'><thead><th>Position</th><th class=\'handle\'>GitHub Handle</th><th>Score</th></thead><tbody>';
                 var pos = 0, currScore = -1;
 
-                for(var i = 0; i<(rows.length<=25?rows.length:25); i++) {
+                for(var i = 0; ; i++) {
                   var cells = rows[i].split(',');
                   if (cells.length != 2) {
                     $('#leader-div').html('<p>Data could not be parsed.</p>');
@@ -116,6 +116,10 @@
                   
                   if (cells[1] != currScore) {
                     pos = i+1;
+                  }
+                  
+                  if (pos>25 && cells[1] != currScore) {
+                    break;
                   }
 
                   currScore = cells[1];
