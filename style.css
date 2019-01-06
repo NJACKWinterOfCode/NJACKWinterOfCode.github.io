@@ -181,6 +181,24 @@ a {
   padding-bottom: 25px;
 }
 
+.nwoc-timeline-begin::before {
+    border: 5px solid #2196F3;
+    content: "NWoC 2018 begins!";
+    width: 124px;
+    height: 25px;
+    border-radius: 10px;
+    top: 1px;
+    left: -74px;
+    position: absolute;
+    padding: 12px;
+}
+
+.nwoc-timeline-begin {
+    width: 6px;
+    height: 20px;
+    position: relative;
+}
+
 .nwoc-timeline-divider::before {
     border: 5px solid #2196F3;
     background-color: #90CAF9;
@@ -196,6 +214,23 @@ a {
 .nwoc-timeline-divider {
     width: 6px;
     background-color: #2196F3;
+    position: relative;
+}
+
+.nwoc-timeline-end::before {
+    border: 5px solid #2196F3;
+    content: "See you next year!";
+    width: 113px;
+    height: 22px;
+    border-radius: 10px;
+    top: -1px;
+    left: -69px;
+    position: absolute;
+    padding: 12px;
+}
+
+.nwoc-timeline-end {
+    width: 6px;
     position: relative;
 }
 
