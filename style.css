@@ -113,7 +113,7 @@ a {
 }
 
 .nwoc-landing-header {
-  background-image: url("./images/winter_back.jpg");
+  background-image: url("./images/winter_back_enhanced_colors_moderate.jpg");
   background-color: #90CAF9;
   height: 715px;
   background-position: center;
@@ -185,7 +185,7 @@ a {
 
 .nwoc-timeline-begin::before {
     border: 5px solid #2196F3;
-    content: "NWoC 2018 begins!";
+    content: "NWoC 2019 begins!";
     width: 124px;
     height: 25px;
     border-radius: 10px;
