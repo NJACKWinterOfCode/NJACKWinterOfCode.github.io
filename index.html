@@ -133,7 +133,11 @@
 						<div class="mdl-cell mdl-cell--6-col">
        				<a href="/NWoC_MentorManual.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Download Mentor Manual </a>
 						</div>
-					</div>
+          </div>
+
+          <h3>Register</h3>
+          <p>Registrations for NWoC 2019 will open soon. Till then, spread the word.
+          </p>
 
           <a id="timeline"></a>
           <h3>Timeline</h3>
@@ -242,6 +246,7 @@
         <div id="projectFacts" class="sectionClass">
             <div class="fullWidth eight columns">
                 <div class="projectFactsWrap ">
+                  
                     <div class="item wow fadeInUpBig animated animated" data-number="40" style="visibility: visible;">
                         <i class="fa fa-code"></i>
                         <br>
@@ -250,13 +255,13 @@
                         
                         <p>Projects done</p>
                     </div>
-                    <div class="item wow fadeInUpBig animated animated" data-number="500" style="visibility: visible;">
+                    <div class="item wow fadeInUpBig animated animated" data-number="1000" style="visibility: visible;">
                         <i class="fa fa-bug"></i>
                         <br>
                         <br>
-                        <p id="number2" class="number">500+</p>
+                        <p id="number2" class="number">1000+</p>
                         
-                        <p>Issues created</p>
+                        <p>Participants</p>
                     </div>
                     <div class="item wow fadeInUpBig animated animated" data-number="700" style="visibility: visible;">
                         <i class="fa fa-check"></i>
@@ -279,7 +284,7 @@
         </div>
 
           <h3>Projects</h3>
-          <p>NWoC 2018 had over 40 projects to work upon. We had projects ranging from web development to Machine Learning. For the complete list of projects in NWoC 2018, please visit the <a href="/projects.html">Projects</a> page.</p>
+          <p>NWoC 2018 had over 40 projects to work upon. We had projects ranging from Web, App Development to Blockchain and Machine Learning. For the complete list of projects in NWoC 2018, please visit the <a href="/projects.html">Projects</a> page.</p>
 
           <h3>Previous edition sponsored by</h3>
           <a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png"/></a>
@@ -348,8 +353,8 @@
               <div>
               © NJACK, IIT Patna 2019
               <ul class="footer-contact">
-                <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">Email</a></li>
-                <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">Email</a></li>
+                <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
+                <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
                 <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
                 <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
                 <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
@@ -395,7 +400,7 @@
 			easing: settings.easing,
 			step: function() {
 				var mathCount = Math.ceil(this.count);
-				thisElement.text(mathCount);
+				thisElement.text(mathCount + "+");
 			},
 			complete: settings.complete
 		});
@@ -403,7 +408,7 @@
 
 
 $('#number1').jQuerySimpleCounter({end: 40,duration: 3000});
-$('#number2').jQuerySimpleCounter({end: 500,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 1000,duration: 3000});
 $('#number3').jQuerySimpleCounter({end: 700,duration: 3000});
 $('#number4').jQuerySimpleCounter({end: 255,duration: 3000});
 

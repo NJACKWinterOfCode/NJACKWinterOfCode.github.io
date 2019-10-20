@@ -477,6 +477,7 @@ svg {
   color:white;
   display:inline;
   padding:10px;
+  font-size:1.2em;
 }
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
