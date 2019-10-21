@@ -713,8 +713,8 @@ footer p strong {
 
   
   .snowflakes {
-    width:95%; height: 100%;
-    position: absolute; top: -90px; left: 0;
+    width:90%; height: 100%;
+    position: absolute; top: -90px; left: 10%;
   }
   
   .snowflakes i, .snowflakes i:after, .snowflakes i:before { background: white; }
@@ -746,7 +746,7 @@ footer p strong {
   }
   
   .snowflakes i:nth-child(3n) {
-    width: 16px; height: 4px;
+    width: 100px; height: 4px;
     -webkit-animation-duration: 6s;
     -webkit-animation-iteration-count: 30;
     /* -webkit-transform-origin: right -45px; */
