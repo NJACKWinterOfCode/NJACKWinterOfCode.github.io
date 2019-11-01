@@ -107,25 +107,7 @@
                 <div class="mdl-snackbar__text"></div>
                 <button class="mdl-snackbar__action" type="button"></button>
               </div>
-              <script>
-              (function() {
-                'use strict';
-                var snackbarContainer = document.querySelector('#demo-snackbar-example');
-                var handler = function(event) {
-                  document.querySelector('.nwoc-slogan').removeChild(snackbarContainer);
-                };
-                setTimeout(function() {
-                  'use strict';
-                  var data = {
-                    message: 'Registrations are now open.',
-                    timeout: 10000000,
-                    actionHandler: handler,
-                    actionText: 'Close'
-                  };
-                  snackbarContainer.MaterialSnackbar.showSnackbar(data);
-                }, 1000);
-              }());
-              </script>
+
             </p>
           </div>
           <div class="nwoc-header-sponsors">
@@ -454,4 +436,25 @@ $('#number4').jQuerySimpleCounter({end: 255,duration: 3000});
         });
   
   </script>
+                <script>
+                    (function() {
+                      'use strict';
+                      var snackbarContainer = document.querySelector('#demo-snackbar-example');
+                      var handler = function(event) {
+                        document.querySelector('.nwoc-slogan').removeChild(snackbarContainer);
+                      };
+                      for(var i = 0; i < 10; i ++){
+                      setTimeout(function() {
+                        'use strict';
+                        var data = {
+                          message: 'Registrations are now open.',
+                          timeout: 10000000,
+                          actionHandler: handler,
+                          actionText: 'Close'
+                        };
+                        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                      }, 1000);
+                      }
+                    }());
+                    </script>
 </html>
