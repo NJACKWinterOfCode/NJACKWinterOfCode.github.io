@@ -72,7 +72,7 @@
           </a>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link nwoc-menu-item" href="#how-it-works">How it works</a>
+            <a class="mdl-navigation__link nwoc-menu-item" href="#register">Register</a>
             <a class="mdl-navigation__link nwoc-menu-item" href="./projects.html">Projects</a>
             <a class="mdl-navigation__link nwoc-menu-item" href="./leaderboard.html">Leaderboard</a>
             <a class="mdl-navigation__link nwoc-menu-item" href="./archive.html">Archive</a>
@@ -89,11 +89,11 @@
           </button>
         </div>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/#how-it-works">How it works</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
           <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
           <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
           <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
-          <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
+          <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
           <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
         </nav>
       </div>
@@ -103,9 +103,31 @@
           <img class="nwoc-big-logo" src="./images/nwoc-logo.png"/>
           <div class="nwoc-slogan">
             <p>NWoC (NJACK Winter of Code) is a program by NJACK (The Official Computer Science Club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.
+              <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                <div class="mdl-snackbar__text"></div>
+                <button class="mdl-snackbar__action" type="button"></button>
+              </div>
+              <script>
+              (function() {
+                'use strict';
+                var snackbarContainer = document.querySelector('#demo-snackbar-example');
+                var handler = function(event) {
+                  document.querySelector('.nwoc-slogan').removeChild(snackbarContainer);
+                };
+                setTimeout(function() {
+                  'use strict';
+                  var data = {
+                    message: 'Registrations are now open.',
+                    timeout: 10000000,
+                    actionHandler: handler,
+                    actionText: 'Close'
+                  };
+                  snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                }, 1000);
+              }());
+              </script>
             </p>
           </div>
-
           <div class="nwoc-header-sponsors">
               <br>
               <br>
@@ -138,9 +160,10 @@
 						</div>
           </div>
 
-          <h3>Register</h3>
-          <p>Registrations for NWoC 2019 will open soon. Till then, spread the word and follow us on <a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a> to receive all the updates.
-              <a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a>
+          <h3 id="register">Register</h3>
+          <p>Register as a mentor here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfU3tyNC2H6IEkiNqzXuxosjCcqcR7UmtMjLLQWh1LyjOltYA/viewform?usp=sf_link">link</a></p>
+          <p>Register as a student here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSesHgAj3ouKRKkQgg0kro9YCqn4_GyBqJ7B08Cqh24rfwOvSw/viewform?usp=sf_link">link</a></p>
+          <p>Join our chat channel on Gitter over <a href="https://gitter.im/NWoC/NWoC2019">here</a>. Follow us on <a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a> for all the latest updates.
           </p>
 
           <a id="timeline"></a>
@@ -243,7 +266,7 @@
             </tbody>
           </table>
           <br><br>
-          <p>Follow NJACK, IIT Patna on <a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a> and <a href="https://twitter.com/njackiitp" target="_blank">Twitter</a>. Join the <a href="https://gitter.im/NWoC/NWoC2018" target="_blank">Gitter</a> channel for updates.</p>
+          <p>Follow NJACK, IIT Patna on <a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a> and <a href="https://twitter.com/njackiitp" target="_blank">Twitter</a>. Join the <a href="https://gitter.im/NWoC/NWoC2019" target="_blank">Gitter</a> channel for updates.</p>
           <div class="sectiontitle">
             <h3 style="text-align: left">NWoC 2018 Statistics</h3>
         </div>
