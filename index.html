@@ -443,8 +443,8 @@ $('#number4').jQuerySimpleCounter({end: 255,duration: 3000});
                       var handler = function(event) {
                         document.querySelector('.nwoc-slogan').removeChild(snackbarContainer);
                       };
-                      for(var i = 0; i < 10; i ++){
-                      setTimeout(function() {
+                      
+                      window.addEventListener('load', function() {
                         'use strict';
                         var data = {
                           message: 'Registrations are now open.',
@@ -452,9 +452,9 @@ $('#number4').jQuerySimpleCounter({end: 255,duration: 3000});
                           actionHandler: handler,
                           actionText: 'Close'
                         };
-                        snackbarContainer.MaterialSnackbar.showSnackbar(data);
-                      }, 2000);
-                      }
+                        setTimeout(function(){snackbarContainer.MaterialSnackbar.showSnackbar(data)}, 1000);
+                      });
+                      
                     }());
                     </script>
 </html>
