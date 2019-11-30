@@ -88,13 +88,14 @@
 
       <main class="mdl-layout__content">
         <div class="nwoc-content" style="min-height:calc(100vh - 235px);">
-          <h3>NWoC 2018 Leaderboard</h3>
+          <h3>NWoC 2019 Leaderboard</h3>
           <div id="leader-div" style='overflow-x:auto'>
             <p>Leaderboard loading...</p>
           </div>
           <script type="text/javascript">
               $.ajax({
-                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?gid=0&single=true&output=csv',                success: maketable,
+                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?gid=0&single=true&output=csv',            
+		      success: maketable,
                 error: function() {$('#leader-div').html('<p>Leaderboard could not be fetched.</p>');}
               });
 
