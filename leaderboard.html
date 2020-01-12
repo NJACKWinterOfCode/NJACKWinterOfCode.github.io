@@ -1,205 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Leaderboard | NJACK Winter of Code</title>
-    
-    <meta name="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
-		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="NJACK Winter of Code">
-		<meta itemprop="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
 
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@njackiitp">
-		<meta name="twitter:title" content="NJACK Winter of Code">
-		<meta name="twitter:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta name="twitter:creator" content="@njackiitp">
-		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
-	
-		<!-- Open Graph data -->
-		<meta property="og:title" content="NJACK Winter of Code" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="https://njackwinterofcode.github.io/" />
-		<meta property="og:image" content="https://njackwinterofcode.github.io/nwocLogo.jpg" />
-		<meta property="og:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta property="og:site_name" content="NWoC" />
-		<meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
-		<meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
-		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
-    <meta property="article:tag" content="NWoC" />
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          name="description"/>
+    <meta CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology" NAME="Keywords">
+    <!-- Schema.org markup for Google+ -->
+    <meta content="NJACK Winter of Code" itemprop="name">
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          itemprop="description">
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" itemprop="image">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="https://njackwinterofcode.github.io/leaderboard.html"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
-    <link rel="stylesheet" href="/materialjs/material.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Twitter Card data -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="@njackiitp" name="twitter:site">
+    <meta content="NJACK Winter of Code" name="twitter:title">
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          name="twitter:description">
+    <meta content="@njackiitp" name="twitter:creator">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" name="twitter:image:src">
+
+    <!-- Open Graph data -->
+    <meta content="NJACK Winter of Code" property="og:title"/>
+    <meta content="article" property="og:type"/>
+    <meta content="https://njackwinterofcode.github.io/" property="og:url"/>
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" property="og:image"/>
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          property="og:description"/>
+    <meta content="NWoC" property="og:site_name"/>
+    <meta content="2018-10-11T05:59:00+01:00" property="article:published_time"/>
+    <meta content="2018-10-12T19:08:47+01:00" property="article:modified_time"/>
+    <meta content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions."
+          property="article:section"/>
+    <meta content="NWoC" property="article:tag"/>
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://njackwinterofcode.github.io/leaderboard.html" rel="canonical"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+    <link href="/materialjs/material.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
     <script defer src="/materialjs/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.nwoc-drawer-item').click(function() {
-          $( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
+        $(document).ready(function () {
+            $('.nwoc-drawer-item').click(function () {
+                $('.mdl-layout__drawer, .mdl-layout__obfuscator').removeClass('is-visible');
+            });
         });
-      });
     </script>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
-      <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+    <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
         <div class="mdl-layout__header-row">
-          <a href="/" style="text-decoration:none;">
+            <a href="/" style="text-decoration:none;">
             <span class="mdl-layout-title nwoc-menu-title">
               <span class="nwoc-menu-njack">NJACK</span> Winter of Code
             </span>
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/projects.html">Projects</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/leaderboard.html">Leaderboard</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
-          </nav>
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/projects.html">Projects</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/leaderboard.html">Leaderboard</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
+            </nav>
         </div>
-      </header>
+    </header>
 
-      <div class="mdl-layout__drawer nwoc-drawer">
+    <div class="mdl-layout__drawer nwoc-drawer">
         <div class="nwoc-close-button-div">
-          <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
-            <i class="material-icons">close</i>
-          </button>
+            <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
+                <i class="material-icons">close</i>
+            </button>
         </div>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
         </nav>
-      </div>
+    </div>
 
-      <main class="mdl-layout__content">
+    <main class="mdl-layout__content">
         <div class="nwoc-content" style="min-height:calc(100vh - 235px);">
-          <h3>NWoC 2019 Leaderboard</h3>
-          <div id="leader-div" style='overflow-x:auto'>
-            <p>Leaderboard loading...</p>
-          </div>
-          <script type="text/javascript">
-              $.ajax({
-                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?gid=0&single=true&output=csv',            
-		            success: maketable,
-                error: function() {$('#leader-div').html('<p>Leaderboard could not be fetched.</p>');}
-              });
-
-              function maketable(data) {
-                var rows = data.split(/\r?\n|\r/);
-                if (rows.length <= 1) {
-                  $('#leader-div').html('<p>Data could not be parsed.</p>');
-                  return;
-                } 
-                var table = '<table class=\'leaderboard\'><thead><th>Position</th><th class=\'handle\'>GitHub Handle</th><th>Score</th></thead><tbody>';
-                var sortedData=[];
-                for(var i = 0; i<rows.length ; i++) {
-                  var cells = rows[i].split(',');
-                  if (cells.length != 2) {
-                    $('#leader-div').html('<p>Data could not be parsed.</p>');
-                    return;
-                  }
-                  console.log("data",cells[1]);
-                  sortedData.push({score: parseInt(cells[1].trim()), username: cells[0]});
-                }
-                sortedData = sortedData.sort((a, b) => {
-                  return b.score-a.score;
-                });
-                let pos=1;
-                for(var i = 0; i<sortedData.length ; i++) {
-                  if(i>0){
-                    if(sortedData[i].score<sortedData[i-1].score){
-                      pos++;
+            <h3>NWoC 2019 Leaderboard</h3>
+            <div id="leader-div" style='overflow-x:auto'>
+                <p>Leaderboard loading...</p>
+            </div>
+            <script type="text/javascript">
+                $.ajax({
+                    url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?gid=0&single=true&output=csv',
+                    success: maketable,
+                    error: function () {
+                        $('#leader-div').html('<p>Leaderboard could not be fetched.</p>');
                     }
-                  }
-                  table += '<tr>';
-                  table += '<td>'+pos+'</td>';
-                  table += '<td class=\'handle\'><a href=\'https://github.com/'+sortedData[i].username+'\' target=\'_blank\'>'+sortedData[i].username+'</a></td>';
-                  table += '<td>'+sortedData[i].score+'</td>';
-                  table += '</tr>';
+                });
+
+                function maketable(data) {
+                    var rows = data.split(/\r?\n|\r/);
+                    if (rows.length <= 1) {
+                        $('#leader-div').html('<p>Data could not be parsed.</p>');
+                        return;
+                    }
+                    var table = '<table class=\'leaderboard\'><thead><th>Position</th><th class=\'handle\'>GitHub Handle</th><th>Score</th></thead><tbody>';
+                    var sortedData = [];
+                    for (var i = 0; i < rows.length; i++) {
+                        var cells = rows[i].split(',');
+                        if (cells.length != 2) {
+                            $('#leader-div').html('<p>Data could not be parsed.</p>');
+                            return;
+                        }
+                        console.log("data", cells[1]);
+                        sortedData.push({score: parseInt(cells[1].trim()), username: cells[0]});
+                    }
+                    sortedData = sortedData.sort((a, b) => {
+                        return b.score - a.score;
+                    });
+                    let pos = 1;
+                    for (var i = 0; i < sortedData.length; i++) {
+                        if (i > 0) {
+                            if (sortedData[i].score < sortedData[i - 1].score) {
+                                pos++;
+                            }
+                        }
+                        table += '<tr>';
+                        table += '<td>' + pos + '</td>';
+                        table += '<td class=\'handle\'><a href=\'https://github.com/' + sortedData[i].username + '\' target=\'_blank\'>' + sortedData[i].username + '</a></td>';
+                        table += '<td>' + sortedData[i].score + '</td>';
+                        table += '</tr>';
+                    }
+                    table += '</tbody>';
+                    table += '</table>';
+                    table += '</div>';
+                    $('#leader-div').html(table);
                 }
-                table += '</tbody>';
-                table += '</table>';
-                table += '</div>';
-                $('#leader-div').html(table);
-              }
-          </script>
+            </script>
         </div>
         <footer>
             <svg viewBox="0 0 120 28">
-             <defs> 
-                <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
-                  <feColorMatrix in="blur" mode="matrix" values="
-                       1 0 0 0 0  
-                       0 1 0 0 0  
-                       0 0 1 0 0  
-                       0 0 0 13 -9" result="goo" />
-                  <xfeBlend in="SourceGraphic" in2="goo" />
-                </filter>
-                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-              </defs> 
-            
-               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
-               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
-             
-             
-              <g class="gooeff" filter="url(#goo)">
-              <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
-              <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
-              <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
-              <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
-              <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
-              <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
-              <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
-              <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
-              <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
-              <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
-              <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
-              <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
-              
-              <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
-                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
-              <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-             </g>  
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="1"/>
+                        <feColorMatrix in="blur" mode="matrix" result="goo" values="
+                       1 0 0 0 0
+                       0 1 0 0 0
+                       0 0 1 0 0
+                       0 0 0 13 -9"/>
+                        <xfeBlend in="SourceGraphic" in2="goo"/>
+                    </filter>
+                    <path d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
+                          id="wave"/>
+                </defs>
+
+                <use class="wave" id="wave3" x="0" xlink:href="#wave" y="-2"></use>
+                <use class="wave" id="wave2" x="0" xlink:href="#wave" y="0"></use>
+
+
+                <g class="gooeff" filter="url(#goo)">
+                    <circle class="drop drop1" cx="20" cy="2" r="8.8"/>
+                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5"/>
+                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2"/>
+                    <circle class="drop drop4" cx="18" cy="2" r="8.8"/>
+                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5"/>
+                    <circle class="drop drop6" cx="26" cy="2.8" r="9.2"/>
+                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8"/>
+                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5"/>
+                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2"/>
+                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8"/>
+                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5"/>
+                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2"/>
+
+                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"/>
+                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"/>
+                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"/>
+                    <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"/>
+                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"/>
+                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"/>
+                    <use class="wave" id="wave1" x="0" xlink:href="#wave" y="1"/>
+                </g>
                 <!-- g mask="url(#xxx)">
                 <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
                 </g>
               </g -->
-            
+
             </svg>
-            <div class = "footer-text2">
-              <div>
-              © NJACK, IIT Patna 2019
-              <ul class="footer-contact">
-                  <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
-                  <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
-                <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
-              </ul>
+            <div class="footer-text2">
+                <div>
+                    © NJACK, IIT Patna 2019
+                    <ul class="footer-contact">
+                        <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
+                        <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]"
+                               target="_blank">njack.iitp@gmail.com</a></li>
+                        <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
+                        <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-              <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
-          </footer>
+            <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
+        </footer>
         <!-- <footer class="mdl-mini-footer">
           <div class="nwoc-footer">
             <div class="mdl-mini-footer__left-section">
@@ -213,8 +222,8 @@
             </div>
           </div>
         </footer> -->
-        
-      </main>
-    </div>
-  </body>
+
+    </main>
+</div>
+</body>
 </html>

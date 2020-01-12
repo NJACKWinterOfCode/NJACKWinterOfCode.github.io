@@ -1,243 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121199486-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-121199486-2');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121199486-2');
     </script>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact | NJACK Winter of Code</title>
-    
-    <meta name="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
-		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="NJACK Winter of Code">
-		<meta itemprop="description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
 
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@njackiitp">
-		<meta name="twitter:title" content="NJACK Winter of Code">
-		<meta name="twitter:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta name="twitter:creator" content="@njackiitp">
-		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
-	
-		<!-- Open Graph data -->
-		<meta property="og:title" content="NJACK Winter of Code" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="https://njackwinterofcode.github.io/" />
-		<meta property="og:image" content="https://njackwinterofcode.github.io/nwocLogo.jpg" />
-		<meta property="og:description" content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta property="og:site_name" content="NWoC" />
-		<meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
-		<meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
-		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
-    <meta property="article:tag" content="NWoC" />
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          name="description"/>
+    <meta CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology" NAME="Keywords">
+    <!-- Schema.org markup for Google+ -->
+    <meta content="NJACK Winter of Code" itemprop="name">
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          itemprop="description">
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" itemprop="image">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="https://njackwinterofcode.github.io/contact.html"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
-    <link rel="stylesheet" href="/materialjs/material.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Twitter Card data -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="@njackiitp" name="twitter:site">
+    <meta content="NJACK Winter of Code" name="twitter:title">
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          name="twitter:description">
+    <meta content="@njackiitp" name="twitter:creator">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" name="twitter:image:src">
+
+    <!-- Open Graph data -->
+    <meta content="NJACK Winter of Code" property="og:title"/>
+    <meta content="article" property="og:type"/>
+    <meta content="https://njackwinterofcode.github.io/" property="og:url"/>
+    <meta content="https://njackwinterofcode.github.io/nwocLogo.jpg" property="og:image"/>
+    <meta content="NWoC is a program that helps students understand the paradigm of Open Source contribution and gives them real world software development experience."
+          property="og:description"/>
+    <meta content="NWoC" property="og:site_name"/>
+    <meta content="2018-10-11T05:59:00+01:00" property="article:published_time"/>
+    <meta content="2018-10-12T19:08:47+01:00" property="article:modified_time"/>
+    <meta content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions."
+          property="article:section"/>
+    <meta content="NWoC" property="article:tag"/>
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://njackwinterofcode.github.io/contact.html" rel="canonical"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+    <link href="/materialjs/material.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
     <script defer src="/materialjs/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.nwoc-drawer-item').click(function() {
-          $( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
+        $(document).ready(function () {
+            $('.nwoc-drawer-item').click(function () {
+                $('.mdl-layout__drawer, .mdl-layout__obfuscator').removeClass('is-visible');
+            });
         });
-      });
     </script>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
-      <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+    <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
         <div class="mdl-layout__header-row">
-          <a href="/" style="text-decoration:none;">
+            <a href="/" style="text-decoration:none;">
             <span class="mdl-layout-title nwoc-menu-title">
               <span class="nwoc-menu-njack">NJACK</span> Winter of Code
             </span>
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/projects.html">Projects</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/leaderboard.html">Leaderboard</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
-          </nav>
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link nwoc-menu-item" href="/#register">Register</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/projects.html">Projects</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/leaderboard.html">Leaderboard</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/archive.html">Archive</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
+                <a class="mdl-navigation__link nwoc-menu-item" href="/contact.html">Contact</a>
+            </nav>
         </div>
-      </header>
+    </header>
 
-      <div class="mdl-layout__drawer nwoc-drawer">
+    <div class="mdl-layout__drawer nwoc-drawer">
         <div class="nwoc-close-button-div">
-          <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
-            <i class="material-icons">close</i>
-          </button>
+            <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
+                <i class="material-icons">close</i>
+            </button>
         </div>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
+            <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
         </nav>
-      </div>
+    </div>
 
-      <main class="mdl-layout__content">
+    <main class="mdl-layout__content">
         <div class="nwoc-content">
-          <h3>NJACK</h3>
-          <div class="mdl-grid nwoc-manuals">
-            <div class="mdl-cell mdl-cell--4-col">
-              <img src="/images/njack-logo.jpg" class="nwoc-contact"/>
-            </div>
-            <div class="mdl-cell mdl-cell--8-col mdl-cell--hide-phone">
-              <p>Email: <a href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
-              <p>Email: <a href="mailto:njack.iitp@gmail.com" target="_blank">njack.iitp@gmail.com</a></p>
-              <p>Facebook: <a href="https://facebook.com/njack.iitp" target="_blank">https://www.facebook.com/njack.iitp</a></p>
-              <p>Gitter Chat: <a href="https://gitter.im/NWoC/NWoC2019" target="_blank">https://gitter.im/NWoC/NWoC2019</a></p>
-              <p>Twitter: <a href="https://twitter.com/njackiitp" target="_blank">https://twitter.com/njackiitp</a></p>
-              <p>GitHub: <a href="https://github.com/Njack-IITP" target="_blank">https://github.com/Njack-IITP</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--8-col mdl-cell--hide-tablet mdl-cell--hide-desktop">
-              <p>Email: <a href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
-              <p>Email:<br><a href="mailto:njack.iitp@gmail.com" target="_blank">njack.iitp@gmail.com</a>, <a href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
-              <p>Facebook:<br><a href="https://facebook.com/njack.iitp" target="_blank">https://www.facebook.com/njack.iitp</a></p>
-              <p>Gitter Chat:<br><a href="https://gitter.im/NWoC/NWoC2019" target="_blank">https://gitter.im/NWoC/NWoC2019</a></p>
-              <p>Twitter:<br><a href="https://twitter.com/njackiitp" target="_blank">https://twitter.com/njackiitp</a></p>
-              <p>GitHub:<br><a href="https://github.com/Njack-IITP" target="_blank">https://github.com/Njack-IITP</a></p>
+            <h3>NJACK</h3>
+            <div class="mdl-grid nwoc-manuals">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img class="nwoc-contact" src="/images/njack-logo.jpg"/>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col mdl-cell--hide-phone">
+                    <p>Email: <a href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
+                    <p>Email: <a href="mailto:njack.iitp@gmail.com" target="_blank">njack.iitp@gmail.com</a></p>
+                    <p>Facebook: <a href="https://facebook.com/njack.iitp" target="_blank">https://www.facebook.com/njack.iitp</a>
+                    </p>
+                    <p>Gitter Chat: <a href="https://gitter.im/NWoC/NWoC2019" target="_blank">https://gitter.im/NWoC/NWoC2019</a>
+                    </p>
+                    <p>Twitter: <a href="https://twitter.com/njackiitp"
+                                   target="_blank">https://twitter.com/njackiitp</a></p>
+                    <p>GitHub: <a href="https://github.com/Njack-IITP" target="_blank">https://github.com/Njack-IITP</a>
+                    </p>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col mdl-cell--hide-tablet mdl-cell--hide-desktop">
+                    <p>Email: <a href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
+                    <p>Email:<br><a href="mailto:njack.iitp@gmail.com" target="_blank">njack.iitp@gmail.com</a>, <a
+                            href="mailto:njack@iitp.ac.in" target="_blank">njack@iitp.ac.in</a></p>
+                    <p>Facebook:<br><a href="https://facebook.com/njack.iitp" target="_blank">https://www.facebook.com/njack.iitp</a>
+                    </p>
+                    <p>Gitter Chat:<br><a href="https://gitter.im/NWoC/NWoC2019" target="_blank">https://gitter.im/NWoC/NWoC2019</a>
+                    </p>
+                    <p>Twitter:<br><a href="https://twitter.com/njackiitp"
+                                      target="_blank">https://twitter.com/njackiitp</a></p>
+                    <p>GitHub:<br><a href="https://github.com/Njack-IITP"
+                                     target="_blank">https://github.com/Njack-IITP</a></p>
+                </div>
+
             </div>
 
-          </div>
+            <h3>NWoC Organizing Committee</h3>
+            <div class="mdl-grid nwoc-manuals">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars2.githubusercontent.com/u/40834245?s=460&v=4"/>
+                    <p style="margin-top:8px">Amish Mittal<br><a href="https://github.com/fliptrail" target="_blank">@fliptrail</a>
+                        <br><a href="https://www.facebook.com/amish.mittal.fliptrail">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars3.githubusercontent.com/u/42909612?s=460&v=4"/>
+                    <p style="margin-top:8px">Anmol Chaddha<br><a href="https://github.com/chanmol1999" target="_blank">@chanmol1999</a>
+                        <br><a href="https://www.facebook.com/anmol.chaddha.125">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars0.githubusercontent.com/u/43731599?s=460&v=4"/>
+                    <p style="margin-top:8px">Amartya Mondal<br><a href="https://github.com/atm1504" target="_blank">@atm1504</a>
+                        <br><a href="https://www.facebook.com/atm1504">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars0.githubusercontent.com/u/43093724?s=460&v=4"/>
+                    <p style="margin-top:8px">Somenath Sarkar<br><a href="https://github.com/somenath1435"
+                                                                    target="_blank">@somenath1435</a>
+                        <br><a href="https://www.facebook.com/somenath.sarkar.39">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars2.githubusercontent.com/u/43786728?s=400&v=4"/>
+                    <p style="margin-top:8px">Ashwani Yadav<br><a href="https://github.com/ashwaniYDV" target="_blank">@ashwaniYDV</a>
+                        <br><a href="https://www.facebook.com/ashwani.yadav9499">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars1.githubusercontent.com/u/43726197?s=400&v=4"/>
+                    <p style="margin-top:8px">Vanshika Srivastava<br><a href="https://github.com/vanshikasrivastava16"
+                                                                        target="_blank">@vanshikasrivastava16</a>
+                        <br><a href="https://www.facebook.com/vanshika.srivastava.31508">Facebook</a></p>
+                </div>
+            </div>
 
-          <h3>NWoC Organizing Committee</h3>
-          <div class="mdl-grid nwoc-manuals">
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars2.githubusercontent.com/u/40834245?s=460&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Amish Mittal<br><a href="https://github.com/fliptrail" target="_blank">@fliptrail</a>
-              <br><a href="https://www.facebook.com/amish.mittal.fliptrail">Facebook</a></p>
+            <h3>NWoC Advisory Committee</h3>
+            <div class="mdl-grid nwoc-manuals">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars2.githubusercontent.com/u/30979369?s=460&v=4"/>
+                    <p style="margin-top:8px">Arundhati Gupta<br><a href="https://github.com/arundhati24"
+                                                                    target="_blank">@arundhati24</a>
+                        <br>GitHub Campus Expert - IIT Patna
+                        <br><a href="https://www.facebook.com/gupta.arundhati">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars3.githubusercontent.com/u/31135861?s=400&v=4"/>
+                    <p style="margin-top:8px">Akshat Jain<br><a href="https://github.com/Akshat-Jain" target="_blank">@Akshat-Jain</a>
+                        <br><a href="https://www.facebook.com/ak.jn.7">Facebook</a></p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="nwoc-contact" src="https://avatars1.githubusercontent.com/u/10235437?s=400&v=4"/>
+                    <p style="margin-top:8px">Arya Das<br><a href="https://github.com/aryadas98" target="_blank">@aryadas98</a>
+                        <br><a href="https://www.facebook.com/aryadas1998">Facebook</a></p>
+                </div>
             </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars3.githubusercontent.com/u/42909612?s=460&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Anmol Chaddha<br><a href="https://github.com/chanmol1999" target="_blank">@chanmol1999</a>
-                <br><a href="https://www.facebook.com/anmol.chaddha.125">Facebook</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars0.githubusercontent.com/u/43731599?s=460&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Amartya Mondal<br><a href="https://github.com/atm1504" target="_blank">@atm1504</a>
-                <br><a href="https://www.facebook.com/atm1504">Facebook</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars0.githubusercontent.com/u/43093724?s=460&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Somenath Sarkar<br><a href="https://github.com/somenath1435" target="_blank">@somenath1435</a>
-                <br><a href="https://www.facebook.com/somenath.sarkar.39">Facebook</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars2.githubusercontent.com/u/43786728?s=400&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Ashwani Yadav<br><a href="https://github.com/ashwaniYDV" target="_blank">@ashwaniYDV</a>
-              <br><a href="https://www.facebook.com/ashwani.yadav9499">Facebook</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars1.githubusercontent.com/u/43726197?s=400&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Vanshika Srivastava<br><a href="https://github.com/vanshikasrivastava16" target="_blank">@vanshikasrivastava16</a>
-                <br><a href="https://www.facebook.com/vanshika.srivastava.31508">Facebook</a></p>
-            </div>
-          </div>
-
-          <h3>NWoC Advisory Committee</h3>
-          <div class="mdl-grid nwoc-manuals">
-            <div class="mdl-cell mdl-cell--6-col">
-                <img src="https://avatars2.githubusercontent.com/u/30979369?s=460&v=4" class="nwoc-contact"/>
-                <p style="margin-top:8px">Arundhati Gupta<br><a href="https://github.com/arundhati24" target="_blank">@arundhati24</a>
-                <br>GitHub Campus Expert - IIT Patna
-                <br><a href="https://www.facebook.com/gupta.arundhati">Facebook</a></p>
-              </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars3.githubusercontent.com/u/31135861?s=400&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Akshat Jain<br><a href="https://github.com/Akshat-Jain" target="_blank">@Akshat-Jain</a>
-              <br><a href="https://www.facebook.com/ak.jn.7">Facebook</a></p>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <img src="https://avatars1.githubusercontent.com/u/10235437?s=400&v=4" class="nwoc-contact"/>
-              <p style="margin-top:8px">Arya Das<br><a href="https://github.com/aryadas98" target="_blank">@aryadas98</a>
-                <br><a href="https://www.facebook.com/aryadas1998">Facebook</a></p>
-            </div>
-          </div>
 
         </div>
         <footer>
             <svg viewBox="0 0 120 28">
-             <defs> 
-                <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
-                  <feColorMatrix in="blur" mode="matrix" values="
-                       1 0 0 0 0  
-                       0 1 0 0 0  
-                       0 0 1 0 0  
-                       0 0 0 13 -9" result="goo" />
-                  <xfeBlend in="SourceGraphic" in2="goo" />
-                </filter>
-                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-              </defs> 
-            
-               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
-               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
-             
-             
-              <g class="gooeff" filter="url(#goo)">
-              <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
-              <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
-              <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
-              <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
-              <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
-              <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
-              <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
-              <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
-              <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
-              <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
-              <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
-              <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
-              
-              <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
-                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
-              <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-             </g>  
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="1"/>
+                        <feColorMatrix in="blur" mode="matrix" result="goo" values="
+                       1 0 0 0 0
+                       0 1 0 0 0
+                       0 0 1 0 0
+                       0 0 0 13 -9"/>
+                        <xfeBlend in="SourceGraphic" in2="goo"/>
+                    </filter>
+                    <path d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
+                          id="wave"/>
+                </defs>
+
+                <use class="wave" id="wave3" x="0" xlink:href="#wave" y="-2"></use>
+                <use class="wave" id="wave2" x="0" xlink:href="#wave" y="0"></use>
+
+
+                <g class="gooeff" filter="url(#goo)">
+                    <circle class="drop drop1" cx="20" cy="2" r="8.8"/>
+                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5"/>
+                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2"/>
+                    <circle class="drop drop4" cx="18" cy="2" r="8.8"/>
+                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5"/>
+                    <circle class="drop drop6" cx="26" cy="2.8" r="9.2"/>
+                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8"/>
+                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5"/>
+                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2"/>
+                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8"/>
+                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5"/>
+                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2"/>
+
+                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"/>
+                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"/>
+                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"/>
+                    <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"/>
+                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"/>
+                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"/>
+                    <use class="wave" id="wave1" x="0" xlink:href="#wave" y="1"/>
+                </g>
                 <!-- g mask="url(#xxx)">
                 <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
                 </g>
               </g -->
-            
+
             </svg>
-            <div class = "footer-text2">
-              <div>
-              © NJACK, IIT Patna 2019
-              <ul class="footer-contact">
-                  <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
-                  <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
-                <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
-              </ul>
+            <div class="footer-text2">
+                <div>
+                    © NJACK, IIT Patna 2019
+                    <ul class="footer-contact">
+                        <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
+                        <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]"
+                               target="_blank">njack.iitp@gmail.com</a></li>
+                        <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
+                        <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-              <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
-          </footer>
+            <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
+        </footer>
         <!-- <footer class="mdl-mini-footer">
           <div class="nwoc-footer">
             <div class="mdl-mini-footer__left-section">
@@ -251,8 +274,8 @@
             </div>
           </div>
         </footer> -->
-        
-      </main>
-    </div>
-  </body>
+
+    </main>
+</div>
+</body>
 </html>
