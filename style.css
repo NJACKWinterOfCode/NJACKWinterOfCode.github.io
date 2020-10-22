@@ -185,7 +185,7 @@ a {
 
 .nwoc-timeline-begin::before {
     border: 5px solid #2196F3;
-    content: "NWoC 2019 begins!";
+    content: "NWoC 2020 begins!";
     width: 124px;
     height: 25px;
     border-radius: 10px;
@@ -221,7 +221,7 @@ a {
 
 .nwoc-timeline-end::before {
     border: 5px solid #2196F3;
-    content: "NWoC 2019 ends";
+    content: "NWoC 2020 ends";
     width: 113px;
     height: 22px;
     border-radius: 10px;
