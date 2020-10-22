@@ -109,7 +109,7 @@
 
     <main class="mdl-layout__content">
       <div class="nwoc-landing-header">
-        <img class="nwoc-big-logo" src="./images/nwoc-logo.png" />
+        <img class="nwoc-big-logo js-tilt" data-tilt src="./images/nwoc-logo.png" />
         <div class="nwoc-slogan">
           <p>NWoC (NJACK Winter of Code) is a program by NJACK (The Official Computer Science Club of IIT Patna) that
             helps students understand the paradigm of Open Source contribution and gives them real world software
@@ -519,4 +519,13 @@
   }());
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script>
+  $('.js-tilt').tilt({
+    scale: 1.2,
+    glare: true,
+    maxGlare: 1
+  })
+</script>
+<script src="./assets/js/sparkle.js"></script>
 </html>
