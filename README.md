@@ -11,12 +11,12 @@
 <p>NWoC 2019 had over 40 projects to work upon. We had projects ranging from Web, App Development to Blockchain and Machine Learning. For the complete list of projects in NWoC 2019, please visit the <a href="/projects.html">Projects</a> page.</p>
 
 <h2>NWoC is sponsored by</h2>
-<a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png" style="width:100px!important;height:100px!important;" /></a>
+<a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png"/></a>
 
 <h2>Previous edition sponsored by</h2>
-<a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png"style="width:100px;height:100px;" /></a>&nbsp;&nbsp;
-<a href="https://www.jetbrains.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/jetbrains-variant-1.png"style="width:100px;height:100px;" /></a>&nbsp;&nbsp;
-<a href="https://www.digitalocean.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/DO_Logo_Vertical_Blue.png" style="width:100px;height:100px;"/></a>
+<a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png" /></a>&nbsp;&nbsp;
+<a href="https://www.jetbrains.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/jetbrains-variant-1.png" /></a>&nbsp;&nbsp;
+<a href="https://www.digitalocean.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/DO_Logo_Vertical_Blue.png"/></a>
 
 <h2>Social Media Handles</h2>
 <ul>
