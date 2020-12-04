@@ -39,7 +39,7 @@ a {
 
 .nwoc-menu-item, .nwoc-drawer-item {
   color: rgba(0,0,0,.54) !important;
-  font-size: 1.2rem; !important;
+  font-size: 1.2rem !important;
   font-weight: 600;
   padding: 0 15px !important;
   text-decoration: none;
