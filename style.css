@@ -379,7 +379,7 @@ footer {
   bottom:0px
 }
 footer div {
-  background-color: var(--col-deepblue);
+/*   background-color: var(--col-deepblue); */
   margin: -5px 0px 0px 0px;
   padding:0px;
   text-align:center;
