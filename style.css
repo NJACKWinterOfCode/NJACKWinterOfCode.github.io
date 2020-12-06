@@ -39,7 +39,7 @@ a {
 
 .nwoc-menu-item, .nwoc-drawer-item {
   color: rgba(0,0,0,.54) !important;
-  font-size: 1.2rem; !important;
+  font-size: 1.2rem !important;
   font-weight: 600;
   padding: 0 15px !important;
   text-decoration: none;
@@ -366,12 +366,62 @@ a {
 }
 
 .leaderboard .handle {
-  text-align: left;
-  padding: 0 30px;
+  padding: 0 250px;
 }
 
 .leaderboard td,th {
   text-align: center;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.05em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard thead tr {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 15px 15px;
+}
+
+.leaderboard tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: all 0.3s;
+}
+
+.leaderboard tbody tr :hover {
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.3s;
+}
+
+.leaderboard .handle a {
+  text-decoration: none;
+}
+
+.leaderboard tbody tr.handle :hover {
+  cursor: pointer;
+}
+
+.leaderboard tr:hover{
+  background-color: rgb(230, 250, 250);
+  opacity: 0.9;
+  font-weight: 1.2rem;
 }
 
 footer {
