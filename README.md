@@ -8,7 +8,8 @@
 <p>Participants can apply for the program either as a student or as a mentor. Mentors are selected through a selection process. The selected mentors propose projects, the best of which are chosen to be included in the program. Students work on these projects in their winter vacations. The mentors review the pull requests and the overall work on their project by various contributors throughout the coding period of the program. At the end of the coding period, the students are compared on the basis of most contributions.</p>
 
 <h2>Projects</h2>
-<p>NWoC 2019 had over 40 projects to work upon. We had projects ranging from Web, App Development to Blockchain and Machine Learning. For the complete list of projects in NWoC 2020, please visit the <a href="https://njackwinterofcode.github.io/projects.html">Projects</a> page.</p>
+<p>NWoC 2019 had over 40 projects to work upon. We had projects ranging from Web, App Development to Blockchain and Machine Learning. </p>
+<p>For the ongoing NJACK Winter of Code, please visit the <a href="https://njackwinterofcode.github.io/projects.html">Projects</a> page for complete list of projects under NWoC 2020.</p>
 
 <h2>NWoC is sponsored by</h2>
 <a href="https://www.github.com/" target="_blank"><img class="nwoc-current-sponsors" src="./images/GitHub_Logo_custom.png" width="200" height="200"/></a>
