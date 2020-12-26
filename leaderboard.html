@@ -130,7 +130,14 @@
                   }
                   table += '<tr>';
                   table += '<td>'+pos+'</td>';
-                  table += '<td class=\'handle\'><a href=\'https://github.com/'+sortedData[i].username+'\' target=\'_blank\'>'+sortedData[i].username+'</a></td>';
+                  table += (
+                    '<td class=\'handle\'><a href=\'https://github.com/'
+                      + sortedData[i].username
+                      + '\' target=\'_blank\'>'
+                      + `<img style='width: 22px; border-radius: 100%;' src='https://avatars.githubusercontent.com/${sortedData[i].username}' alt=${sortedData[i].username} />&nbsp;`
+                      + sortedData[i].username
+                      + '</a></td>'
+                  );
                   table += '<td>'+sortedData[i].score+'</td>';
                   table += '</tr>';
                 }
