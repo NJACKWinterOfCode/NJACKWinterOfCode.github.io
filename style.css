@@ -365,20 +365,32 @@ a {
   }
 }
 
-.leaderboard .handle {
-  padding: 0 250px;
+.leaderboard tr th:first-child,
+.leaderboard tr td:first-child {
+  text-align: right;
+  padding-left: 13px;
 }
 
-.leaderboard td,th {
-  text-align: center;
+.leaderboard tr td:first-child {
+  padding-right: 14px;
+}
+
+
+.leaderboard .handle {
+  padding-left: 230px;
+  padding-right: 130px;
+  text-align: left;
+}
+
+.leaderboard tr th:nth-child(3),
+.leaderboard tr td:nth-child(3) {
+  text-align: right;
+  padding-right: 16px;
 }
 
 .leaderboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-collapse: collapse;
+  width: 100%;
   margin: 25px 0;
   font-size: 1.05em;
   min-width: 400px;
@@ -427,14 +439,24 @@ a {
 /* Responsive Leaderboard */
 
 @media screen and (max-width: 960px) {
-  .leaderboard .handle {
-    padding: 0 30px;
-  }
-
   .leaderboard {
     margin: 30px 0;
     font-size: 1.05em;
     min-width: 10px;
+  }
+
+  .leaderboard .handle {
+    padding-left: 24px;
+    padding-right: 2px;
+  }
+
+  .leaderboard th,
+  .leaderboard td {
+    padding: 14px 6px;
+  }
+
+  .leaderboard tr td:first-child {
+    padding-right: 9px;
   }
 }
 
