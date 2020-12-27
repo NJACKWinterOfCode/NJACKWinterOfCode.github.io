@@ -96,7 +96,7 @@
           </div>
           <script type="text/javascript">
               $.ajax({
-                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?gid=0&single=true&output=csv',            
+                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD6wb5j6F4uP3Qz3Z5jKeXAvSxdxphc6T9r_IurCzOBWX7lzZ1AtFNRYILB__dOnosSlE9elUMPF75/pub?output=csv',            
 		            success: maketable,
                 error: function() {$('#leader-div').html('<p>Leaderboard will be up soon!.</p>');}
               });
@@ -104,7 +104,7 @@
               function maketable(data) {
                 var rows = data.split(/\r?\n|\r/);
                 if (rows.length <= 1) {
-                  $('#leader-div').html('<p>Data could not be parsed.</p>');
+                  $('#leader-div').html('<p>Problem observed while creating table.</p>');
                   return;
                 } 
                 var table = '<table class=\'leaderboard\'><thead><th>Position</th><th class=\'handle\'>GitHub Handle</th><th>Score</th></thead><tbody>';
