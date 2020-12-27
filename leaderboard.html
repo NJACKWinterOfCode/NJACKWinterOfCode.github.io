@@ -111,10 +111,11 @@
                 var sortedData=[];
                 for(var i = 0; i<rows.length ; i++) {
                   var cells = rows[i].split(',');
-                  // if (cells.length != 2) {
-                  //   $('#leader-div').html('<p>Data could not be parsed.</p>');
-                  //   return;
-                  // }
+                  if (cells.length != 2) {
+                    $('#leader-div').html('<p>Data could not be parsed.</p>');
+                    return;
+                  }
+                  console.log(cells.length)
                   console.log("data",cells[1]);
                   sortedData.push({score: parseInt(cells[1].trim()), username: cells[0]});
                 }
