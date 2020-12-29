@@ -114,6 +114,7 @@
                   if (cells.length != 2) {
                     $('#leader-div').html('<p>Data could not be parsed.</p>');
                     console.log("Offending row: ", rows[i]);
+                    console.log("Offending row index in sheets: ", i + 1);
                     console.log("Offending cell length segment: ", cells.length);
                     console.log("data for offending segment: ", cells[1]);
               
@@ -134,7 +135,7 @@
                   }
                   table += '<tr>';
                   table += '<td>'+pos+'</td>';
-                  table += '<td class=\'handle\'><a href=\'https://github.com/'+sortedData[i].username+'\' target=\'_blank\'>'+sortedData[i].username+'</a></td>';
+                  table += '<td class=\'handle\'><a href=\'https://github.com/'+sortedData[i].username+'\' target=\'_blank\'>'+sortedData[i].username+'</a></td>';`<img style='width: 22px; border-radius: 100%;' src='https://avatars.githubusercontent.com/${sortedData[i].username}' alt=${sortedData[i].username} />&nbsp;`;
                   table += '<td>'+sortedData[i].score+'</td>';
                   table += '</tr>';
                 }
