@@ -115,10 +115,10 @@
                     $('#leader-div').html('<p>Data could not be parsed.</p>');
                     console.log("Offending cell length segment: ", cells.length);
                     console.log("data for offending segment: ", cells[1]);
-                    return;
+              
                   }
-                  console.log("cells length:", cells.length);
-                  console.log("data",cells[1]);
+                  // console.log("cells length:", cells.length);
+                  // console.log("data",cells[1]);
                   sortedData.push({score: parseInt(cells[1].trim()), username: cells[0]});
                 }
                 sortedData = sortedData.sort((a, b) => {
