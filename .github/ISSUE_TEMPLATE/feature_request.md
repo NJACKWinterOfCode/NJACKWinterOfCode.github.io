@@ -8,16 +8,13 @@ assignees: ''
 ---
 
 **Is your feature request related to a problem? Please describe.**
-<!-- A clear and concise description of what the problem is. --->
+<!-- A clear and concise description of feature you need to be implemented in the module. --->
 
 **Describe the solution you'd like**
-<!-- A clear and concise description of what you want to happen. --->
+<!-- A clear and concise description of what you've planned how to implement this feature. --->
 
 **Describe alternatives you've considered**
-<!-- A clear and concise description of any alternative solutions or features you've considered. --->
-
-**Approach to be followed (optional)**
-<!-- A clear and concise description of approach to be followed. --->
+<!-- A clear and concise description of any alternative solutions(to the one you mentioned in section above) or features you've considered. --->
 
 **Additional context**
-<!-- Add any other context or screenshots about the feature request here. --->
+<!-- Add any other context whether it be from old issues or Pull Requests or screenshots about the feature request here. --->
