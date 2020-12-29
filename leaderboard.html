@@ -104,7 +104,7 @@
               function maketable(data) {
                 var rows = data.split(/\r?\n|\r/);
                 if (rows.length <= 1) {
-                  $('#leader-div').html('<p>Data could not be parsed.</p>');
+                  $('#leader-div').html('<p>Problem observed while creating table.</p>');
                   return;
                 } 
                 var table = '<table class=\'leaderboard\'><thead><th>Position</th><th class=\'handle\'>GitHub Handle</th><th>Score</th></thead><tbody>';
@@ -113,8 +113,13 @@
                   var cells = rows[i].split(',');
                   if (cells.length != 2) {
                     $('#leader-div').html('<p>Data could not be parsed.</p>');
-                    return;
+                    console.log("Offending row: ", rows[i]);
+                    console.log("Offending row index in sheets: ", i + 1);
+                    console.log("Offending cell length segment: ", cells.length);
+                    console.log("data for offending segment: ", cells[1]);
+              
                   }
+                  console.log("cells length:", cells.length);
                   console.log("data",cells[1]);
                   sortedData.push({score: parseInt(cells[1].trim()), username: cells[0]});
                 }
