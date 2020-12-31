@@ -1,6 +1,8 @@
 <h1> NWoC - NJACK Winter of Code</h1>
 <img src="nwocLogo.jpg"/>
 
+**This repository is the source code of the official website of NJACK Winter of Code, which is deployed live at: https://njackwinterofcode.github.io/**
+
 <h2>About Us</h2>
 <p>NJACK Winter of Code is an initiative by NJACK, IIT Patna, targeted at students who have never participated in <b>Free or Open Source Software (FOSS)</b> development before, as well as at those who have already become an expert in Open Source Development and are currently contributing to projects of any domain, say Web, Mobile, Machine Learning, Blockchain, IoT etc. It also aims to prepare them for bigger programs and opportunities like Google Summer of Code, Outreachy etc.</p>
 
@@ -29,5 +31,4 @@
 </ul>
 
 
-Visit our website <a href="https://njackwinterofcode.github.io/">here</a> .
-
+Contributions are welcome here :tada:
