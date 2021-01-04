@@ -11,7 +11,7 @@ assignees: ''
 <!-- A clear description of what the bug is. --->
 
 **To Reproduce**
-Steps to reproduce the behavior:
+Steps to reproduce the behaviour:
 1. 
 2. 
 3. 
@@ -19,10 +19,10 @@ Steps to reproduce the behavior:
 5. 
  and so on -->
 
-**Expected behavior**
+**Expected behaviour**
 <!-- A clear description of what you expected to happen. --->
 
-**Actual behavior**
+**Actual behaviour**
 <!-- A clear description of how the code performed w.r.t expectations. --->
 
 **Screenshots**
