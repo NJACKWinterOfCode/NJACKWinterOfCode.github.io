@@ -19,6 +19,7 @@ h2,h3 {
 
 a {
   color: #1976D2;
+  text-decoration: none;
 }
 
 .nwoc-header {
@@ -324,8 +325,100 @@ a {
   margin: 0 auto;
 }
 
+/* Archive Page Start Her*/
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.archive summary{
+  width: 30%;
+  margin-bottom: 12px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #b9ebfa;
+  box-shadow: 4px 3px 4px #a3cbf2;
+  transform: scale(.98);
+  transition: all .3s ease;
+}
+
+.archive summary:hover{
+  transform: scale(1.05);
+  background-color: #9ee1f9;
+  box-shadow: 5px 6px 8px #a3cbf2;
+}
+
+/* Contact Page Start Here */
 .nwoc-contact {
   width: 160px;
+}
+
+.contact-heading{
+  text-align: center;
+}
+
+.nwoc-contact + p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: center;
+} 
+
+img.nwoc-contact{
+  display:block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-links{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a{
+  font-size: 1.5em;
+  padding: 12px;
+  background-color: white;
+  border: 2px solid rgb(167, 218, 233);
+  border-radius: 50%;
+  margin: 4px;
+  transform: scale(1);
+  transition: all 0.1s ease;
+}
+
+.member-links a{
+  font-size: 16px;
+  padding: 8px;
+}
+
+.social-links a:hover{
+  transform: scale(1.1);
+  border: 2px solid rgb(129, 204, 227);
+}
+
+.fa-facebook-f{
+  color: #3b5998;
+  margin: 1px .3em;
+}
+
+.fa-twitter{
+  color: #1DA1F2;
+}
+
+.fa-github{
+  color: black;
+}
+
+.fa-gitter{
+  color: #35dd02;
+  margin: 1px 2px;
+}
+
+.fa-envelope{
+  color: #ca6363;
 }
 
 @media screen and (max-width: 960px) {
@@ -468,9 +561,9 @@ svg {
   transform-box: fill-box;
   transform-origin: 50% 100%;
 }
-.drop1 {
+/* .drop1 {
   
-}
+} */
 .drop2 {
   animation-delay: 3s;
   animation-duration:3s;
@@ -727,8 +820,8 @@ footer p strong {
 }
 
 
-.about-me-img img {
-}
+/* .about-me-img img {
+} */
 
 
 .authorWindow{
