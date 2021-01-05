@@ -9,6 +9,37 @@ body {
   background-color: #cbeef8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: #87CEFA;
+  color: white;
+  font-color: blue;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.fa-angle-double-up {
+  font-weight: bolder;
+}
+
+#myBtn:hover {
+  background-color: #D3D3D3;
+}
+
 p {
     font-size: 16px;
 }
@@ -99,6 +130,13 @@ a {
 @media screen and (min-width: 961px) {
   .mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
     padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #myBtn {
+    bottom: 38px;
+    right: 20px;
   }
 }
 
