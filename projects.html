@@ -1,671 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121199486-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-121199486-2');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121199486-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | NJACK Winter of Code</title>
-    
-    <meta name="description" content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
-		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="NJACK Winter of Code">
-		<meta itemprop="description" content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
+    gtag('config', 'UA-121199486-2');
+  </script>
 
-		<!-- Twitter Card data -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@njackiitp">
-		<meta name="twitter:title" content="NJACK Winter of Code">
-		<meta name="twitter:description" content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-		<meta name="twitter:creator" content="@njackiitp">
-		<!-- Twitter summary card with large image must be at least 280x150px -->
-		<meta name="twitter:image:src" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
-	
-		<!-- Open Graph data -->
-		<meta property="og:title" content="NJACK Winter of Code" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="https://njackwinterofcode.github.io/" />
-		<meta property="og:image" content="https://njackwinterofcode.github.io/nwocLogo.jpg" />
-		<meta property="og:description" content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-		<meta property="og:site_name" content="NWoC" />
-		<meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
-		<meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
-		<meta property="article:section" content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
-    <meta property="article:tag" content="NWoC" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | NJACK Winter of Code</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="canonical" href="https://njackwinterofcode.github.io/projects.html"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
-    <link rel="stylesheet" href="/materialjs/material.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="/materialjs/material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="description"
+    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+  <meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="NJACK Winter of Code">
+  <meta itemprop="description"
+    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+  <meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.nwoc-drawer-item').click(function() {
-          $( '.mdl-layout__drawer, .mdl-layout__obfuscator' ).removeClass( 'is-visible' );
-        });
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@njackiitp">
+  <meta name="twitter:title" content="NJACK Winter of Code">
+  <meta name="twitter:description"
+    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
+  <meta name="twitter:creator" content="@njackiitp">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image:src" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="NJACK Winter of Code" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://njackwinterofcode.github.io/" />
+  <meta property="og:image" content="https://njackwinterofcode.github.io/nwocLogo.jpg" />
+  <meta property="og:description"
+    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
+  <meta property="og:site_name" content="NWoC" />
+  <meta property="article:published_time" content="2018-10-11T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2018-10-12T19:08:47+01:00" />
+  <meta property="article:section"
+    content="NJACK Winter of Code is an initiative by Open Source Department of NJACK, IIT Patna for the students, who have never participated in Free or Open Source Software (FOSS) development before, to get them involved during the winter vacations and break the ice of Open Source contributions." />
+  <meta property="article:tag" content="NWoC" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="canonical" href="https://njackwinterofcode.github.io/projects.html" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
+  <link rel="stylesheet" href="/materialjs/material.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="/materialjs/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.nwoc-drawer-item').click(function () {
+        $('.mdl-layout__drawer, .mdl-layout__obfuscator').removeClass('is-visible');
       });
-    </script>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
-      <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
-        <div class="mdl-layout__header-row">
-          <a href="/" style="text-decoration:none;">
-            <span class="mdl-layout-title nwoc-menu-title">
-              <span class="nwoc-menu-njack">NJACK</span> Winter of Code
-            </span>
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link nwoc-menu-item" href="./index.html#register">Register</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="./projects.html">Projects</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="./leaderboard.html">Leaderboard</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="./archive.html">Archive</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="./contact.html">Contact</a>
-            <a class="mdl-navigation__link nwoc-menu-item" href="/timeline.html">Timeline</a>
-          </nav>
-        </div>
-      </header>
+    });
+  </script>
+</head>
 
-      <div class="mdl-layout__drawer nwoc-drawer">
-        <div class="nwoc-close-button-div">
-          <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
-            <i class="material-icons">close</i>
-          </button>
-        </div>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
-          <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+    <header class="mdl-layout__header mdl-layout__header--scroll nwoc-header">
+      <div class="mdl-layout__header-row">
+        <a href="/" style="text-decoration:none;">
+          <span class="mdl-layout-title nwoc-menu-title">
+            <span class="nwoc-menu-njack">NJACK</span> Winter of Code
+          </span>
+        </a>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link nwoc-menu-item" href="./index.html#register">Register</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="./projects.html">Projects</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="./leaderboard.html">Leaderboard</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="./archive.html">Archive</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="/codeofconduct.html">Conduct</a>
+          <a class="mdl-navigation__link nwoc-menu-item" href="./contact.html">Contact</a>
           <a class="mdl-navigation__link nwoc-menu-item" href="/timeline.html">Timeline</a>
         </nav>
       </div>
+    </header>
 
-      <main class="mdl-layout__content">
-        <div class="nwoc-content">
-          <h3>NWoC 2020 Projects</h3>
+    <div class="mdl-layout__drawer nwoc-drawer">
+      <div class="nwoc-close-button-div">
+        <button class="mdl-button mdl-js-button nwoc-close-button nwoc-drawer-item">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/#register">Register</a>
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/projects.html">Projects</a>
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/leaderboard.html">Leaderboard</a>
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/archive.html">Archive</a>
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/codeofconduct.html">Conduct</a>
+        <a class="mdl-navigation__link nwoc-drawer-item" href="/contact.html">Contact</a>
+        <a class="mdl-navigation__link nwoc-menu-item" href="/timeline.html">Timeline</a>
+      </nav>
+    </div>
 
-          <!-- <p style="text-align:justify">To be released soon...</p>-->
+    <main class="mdl-layout__content">
+      <div class="nwoc-content">
+        <h3 style="text-align: center;">NWoC 2020 Projects</h3>
 
-         <p style="text-align:justify">These are the selected projects for NWoC 2020. Please refer to the project Readme to get the Communication Channel Link of the project to be in touch with the mentor. Make sure to visit the <a href="https://github.com/NJACKWinterOfCode/Get-Started-NWoC20" target="_blank">Getting Started</a> repository to know the important rules and guidelines that you need to follow.</p>
-                    
-          <div class="mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/NJACKWinterOfCode/NJACKWinterOfCode.github.io" target="_blank">NJACKWinterOfCode</a>
-                <div class="repo-desc">Website for NJACK Winter of Code 2020.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903" target="_blank">s-ayush2903 </a><a href="https://github.com/Mehulipal" target="_blank">Mehulipal </a><a href="https://github.com/Ankit7Das" target="_blank">Ankit7Das</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/Team-Tomato/QP-Generator" target="_blank">QP-Generator</a>
-                <div class="repo-desc">A web app which helps everyone to generate question paper with ease. We will use T5 parapharser model to rephrase the questions.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/AkbarHabeeb" target="_blank">AkbarHabeeb</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> React/Flask</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/harsh-9in/Blogger" target="_blank">Blogger</a>
-                <div class="repo-desc">A basic blogging application which includes user to create an account and post their views.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/harsh-9in" target="_blank">harsh-9in</a> </div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python/HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/garimasingh128/ToDoista" target="_blank">ToDoista</a>
-                <div class="repo-desc">A ToDo app made using MERN to keep a track of your activities on a single click.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/garimasingh128" target="_blank">garimasingh128</a> </div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> MERN</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/garimasingh128/profext" target="_blank">profext</a>
-                <div class="repo-desc">A profile search engine for accessing my all social media profile in one tap.This chrome extension let's you track your profiles on any account in a single click.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/garimasingh128" target="_blank">garimasingh128</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS(Chrome Extension)</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/Abhijit2505/edualgo-app-demo" target="_blank">edualgo-app-demo</a>
-                <div class="repo-desc">This repository contains the demo application of the package edualgo in flutter and dart.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/Abhijit2505" target="_blank">Abhijit2505</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Flutter</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/upes-open/Placement-Manager" target="_blank">Placement-Manager</a>
-                <div class="repo-desc"> A Flask application used to managing and maintaining placement related data, activities, updates and more.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/josharsh" target="_blank">josharsh</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/shelcia/CRM" target="_blank">CRM</a>
-                <div class="repo-desc">Customer relations management tool built in MERN stack</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/ReactJS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/shelcia/Weather-app" target="_blank">Weather-app</a>
-                <div class="repo-desc">Weather app using React</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/ReactJS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/shelcia/Socialgram" target="_blank">Socialgram</a>
-                <div class="repo-desc">Clone of Facebook with limited features</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/ReactJS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/s-ayush2903/Recipebook" target="_blank">Recipebook</a>
-                <div class="repo-desc">Get Recipes and cook yummy food.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903" target="_blank">s-ayush2903</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Kotlin/Java</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/s-ayush2903/KeepItClean" target="_blank">KeepItClean</a>
-                <div class="repo-desc">A phenomenal implementation of Pure Architecture.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903" target="_blank">s-ayush2903</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Kotlin</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/piyushchauhan/iitp-discord-bot" target="_blank">iitp-discord-bot</a>
-                <div class="repo-desc">A discrod bot for IIT Patna community on any discord server.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/piyushchauhan" target="_blank">piyushchauhan</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Discord-Bot</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/Dacience/DataScientist" target="_blank">DataScientist</a>
-                <div class="repo-desc">DataScientist is a Python library in making to ease the life of a Data Scientist.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/sidhu1012" target="_blank">sidhu1012</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Data Science</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole" target="_blank">DConsole</a>
-                <div class="repo-desc">Simple Cross Platform Local Logging tool</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/RAJAGOPALAN-GANGADHARAN" target="_blank">RAJAGOPALAN-GANGADHARAN</a> </div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> C++</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> None</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/HarshCasper/Rotten-Scripts" target="_blank">Rotten-Scripts</a>
-                <div class="repo-desc">Scripts that will make you go WOW.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/harshcasper" target="_blank">harshcasper</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> JS/Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Script</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/PragatiVerma18/Snippet-Share" target="_blank">Snippet-Share</a>
-                <div class="repo-desc">This is a snippet sharing app that can be used to share snippets of code and more.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/PragatiVerma18" target="_blank">PragatiVerma18</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python/HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/PragatiVerma18/Snappify" target="_blank">Snappify</a>
-                <div class="repo-desc">A Screenshot app with Screenshot API and React js, that create screenshots of websites with the help of the URL that we will paste to the Input field.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/PragatiVerma18" target="_blank">PragatiVerma18</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/RoboticsClubIITJ/ML-DL-implementation" target="_blank">ML-DL-implementation</a>
-                <div class="repo-desc">An implementation of ML and DL algorithms from scratch in python using nothing but numpy.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/rohansingh9001" target="_blank">rohansingh9001</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Machine Learning</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/smaranjitghose/awesome-portfolio-websites" target="_blank">awesome-portfolio-websites</a>
-                <div class="repo-desc">An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/smaranjitghose" target="_blank">smaranjitghose</a>  <a href="https://github.com/anushbhatia" target="_blank">anushbhatia</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/akshitagupta15june/Face-X" target="_blank">Face-X</a>
-                <div class="repo-desc">Recognition of faces by model training using OPENCV</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june" target="_blank">akshitagupta15june</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> OpenCV</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/akshitagupta15june/vehicle_speed_estimator" target="_blank">vehicle_speed_estimator</a>
-                <div class="repo-desc">It estimates speed of vehicles</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june" target="_blank">akshitagupta15june</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> OpenCV</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/akshitagupta15june/lane_detection_opencv" target="_blank">lane_detection_opencv</a>
-                <div class="repo-desc">The lane detection has proved to be an efficient technique to prevent accidents in Intelligent Transportation Systems.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june" target="_blank">akshitagupta15june</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> OpenCV<li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/ankingcodes/codemon" target="_blank">codemon</a>
-                <div class="repo-desc">CLI tool to ace competitive programming contests.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/ankingcodes" target="_blank">ankingcodes</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> CP</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/lordlabuckdas/gtfoo" target="_blank">gtfoo</a>
-                <div class="repo-desc">Go program to fetch gtfobins</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/lordlabuckdas" target="_blank">lordlabuckdas</a>  <a href="https://github.com/7phalange7" target="_blank">7phalange7</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Go</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Security</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/plazzy99/Heal-O-Chat" target="_blank">Heal-O-Chat</a>
-                <div class="repo-desc">Heal-O-Chat is a Social Media Application for people who have been feeling less motivated in life or are losing hope. </div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/plazzy99" target="_blank">plazzy99</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Java</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/mexili/incogly" target="_blank">incogly</a>
-                <div class="repo-desc">Incog.ly is a peer to peer video conferencing app which keeps your identity anonymous.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/sansyrox" target="_blank">sansyrox</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/mexili/cssify" target="_blank">cssify</a>
-                <div class="repo-desc">CSSify provides a solution to all these problems, by offering a rock solid base which is customisable in all it's aspects. </div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/sansyrox" target="_blank">sansyrox</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/mexili/skribbl" target="_blank">skribbl</a>
-                <div class="repo-desc"></div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/madhavrathi" target="_blank">madhavrathi</a>  <a href="https://github.com/sansyrox" target="_blank">sansyrox</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/abelandcain/Saajha-Kare" target="_blank">Saajha-Kare</a>
-                <div class="repo-desc">Saajha Kare is a file sharing app.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/abelandcain" target="_blank">abelandcain</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Flutter</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/diyajaiswal11/Bloggitt" target="_blank">Bloggitt</a>
-                <div class="repo-desc">A blogging application for users to post their views with Backend on Django and Frontend on HTML, CSS, Bootstrap.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/diyajaiswal11" target="_blank">diyajaiswal11</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python/HTML</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/sakshamj74/IPL-Analysis" target="_blank">IPL-Analysis</a>
-                <div class="repo-desc">This project is about analyzing the previous year's IPL data to get some interesting insights</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/sakshamj74" target="_blank">sakshamj74</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Data Science</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/todi-2000/Quiz-App" target="_blank">Quiz-App</a>
-                <div class="repo-desc">A Quiz App where users can register, attempt quiz, view their scores and leaderboard.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/todi-2000" target="_blank">todi-2000</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/Python</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/dheerajkotwani/NewsUp" target="_blank">NewsUp</a>
-                <div class="repo-desc">News Up is an Android Application to fetch Latest Short News in different categories to keep you updated.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/dheerajkotwani" target="_blank">dheerajkotwani</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Kotlin</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/AbsurdNerd/SimplifyReports" target="_blank">SimplifyReports</a>
-                <div class="repo-desc">SimplifyReport is an Android Application with backend on Django REST Framework which simplifies the process of reporting cases of fire, crimes and calling an ambulance.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/dheerajkotwani" target="_blank">dheerajkotwani</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Kotlin</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/adityabisoi/github-rest-api-v3" target="_blank">github-rest-api-v3</a>
-                <div class="repo-desc">GitHub REST API playground</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/adityabisoi" target="_blank">adityabisoi</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> None</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/raghavSharma1472/RecipeBookFlutter" target="_blank">RecipeBookFlutter</a>
-                <div class="repo-desc">App to create a recipe book using Flutter.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/raghavSharma1472" target="_blank">raghavSharma1472</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> Flutter</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Android</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/sshekhar3000/PLANET_HUNT" target="_blank">PLANET_HUNT</a>
-                <div class="repo-desc">Write 3rd person 3 D arcade game with finished controls and requires a score card and coin collection C# script</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/sshekhar3000" target="_blank">sshekhar3000</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> C#/Unity</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> GameDev</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/pranalishinde28/BlockChain-Test" target="_blank">BlockChain-Test</a>
-                <div class="repo-desc"></div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/pranalishinde28" target="_blank">pranalishinde28</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> C++/C</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> None</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/Canvasbird/canvasboard" target="_blank">canvasboard</a>
-                <div class="repo-desc">An interactive board with plugins focusing on replacing the need of multiple platforms for teaching, presenting, managing or explaining your ideas.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/Kajol-Kumari" target="_blank">Kajol-Kumari</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/JS/TypeScript</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="nwoc-repo-card">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
-                <a class="repo-title" href="https://github.com/Neilblaze/Anyxz" target="_blank">Anyxz</a>
-                <div class="repo-desc">Ez Video Background Semantic Segmentation.</div>
-                <div class="repo-mentors">Mentors: <a href="https://github.com/Neilblaze" target="_blank">Neilblaze</a></div>
-                <ul class="repo-stats">
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg"/> HTML/CSS/JS</li>
-                  <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg"/> Web</li>
-                </ul>
-              </div>
+        <!-- <p style="text-align:justify">To be released soon...</p>-->
+
+        <p style="text-align:justify">These are the selected projects for NWoC 2020. Please refer to the project Readme
+          to get the Communication Channel Link of the project to be in touch with the mentor. Make sure to visit the <a
+            href="https://github.com/NJACKWinterOfCode/Get-Started-NWoC20" target="_blank">Getting Started</a>
+          repository to know the important rules and guidelines that you need to follow.</p>
+
+        <input type="search" name="searchBar" id="searchBar" onkeyup="mysearchFunction()" placeholder="Search for tags (like:html,css,web)">
+
+        <div class="mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/NJACKWinterOfCode/NJACKWinterOfCode.github.io"
+                target="_blank">NJACKWinterOfCode</a> 
+              <div class="repo-desc">Website for NJACK Winter of Code 2020.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903" target="_blank">s-ayush2903
+                </a><a href="https://github.com/Mehulipal" target="_blank">Mehulipal </a><a
+                  href="https://github.com/Ankit7Das" target="_blank">Ankit7Das</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
             </div>
           </div>
-
-          <br>
-          <p>To see previous year's projects, check the <a href="/archive.html">Archive</a>.</p>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/Team-Tomato/QP-Generator" target="_blank">QP-Generator</a>
+              <div class="repo-desc">A web app which helps everyone to generate question paper with ease. We will use T5
+                parapharser model to rephrase the questions.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/AkbarHabeeb"
+                  target="_blank">AkbarHabeeb</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> React/Flask
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/harsh-9in/Blogger" target="_blank">Blogger</a>
+              <div class="repo-desc">A basic blogging application which includes user to create an account and post
+                their views.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/harsh-9in" target="_blank">harsh-9in</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />
+                  Python/HTML/CSS/JS</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/garimasingh128/ToDoista" target="_blank">ToDoista</a>
+              <div class="repo-desc">A ToDo app made using MERN to keep a track of your activities on a single click.
+              </div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/garimasingh128"
+                  target="_blank">garimasingh128</a> </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> MERN</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/garimasingh128/profext" target="_blank">profext</a>
+              <div class="repo-desc">A profile search engine for accessing my all social media profile in one tap.This
+                chrome extension let's you track your profiles on any account in a single click.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/garimasingh128"
+                  target="_blank">garimasingh128</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />
+                  HTML/CSS/JS(Chrome Extension)</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/Abhijit2505/edualgo-app-demo"
+                target="_blank">edualgo-app-demo</a>
+              <div class="repo-desc">This repository contains the demo application of the package edualgo in flutter and
+                dart.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/Abhijit2505"
+                  target="_blank">Abhijit2505</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Flutter</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/upes-open/Placement-Manager"
+                target="_blank">Placement-Manager</a>
+              <div class="repo-desc"> A Flask application used to managing and maintaining placement related data,
+                activities, updates and more.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/josharsh" target="_blank">josharsh</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/Python
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/shelcia/CRM" target="_blank">CRM</a>
+              <div class="repo-desc">Customer relations management tool built in MERN stack</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/ReactJS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/shelcia/Weather-app" target="_blank">Weather-app</a>
+              <div class="repo-desc">Weather app using React</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/ReactJS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/shelcia/Socialgram" target="_blank">Socialgram</a>
+              <div class="repo-desc">Clone of Facebook with limited features</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/shelcia" target="_blank">shelcia</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/ReactJS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/s-ayush2903/Recipebook" target="_blank">Recipebook</a>
+              <div class="repo-desc">Get Recipes and cook yummy food.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903"
+                  target="_blank">s-ayush2903</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Kotlin/Java
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/s-ayush2903/KeepItClean" target="_blank">KeepItClean</a>
+              <div class="repo-desc">A phenomenal implementation of Pure Architecture.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/s-ayush2903"
+                  target="_blank">s-ayush2903</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Kotlin</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/piyushchauhan/iitp-discord-bot"
+                target="_blank">iitp-discord-bot</a>
+              <div class="repo-desc">A discrod bot for IIT Patna community on any discord server.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/piyushchauhan"
+                  target="_blank">piyushchauhan</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> JS</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Discord-Bot</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/Dacience/DataScientist" target="_blank">DataScientist</a>
+              <div class="repo-desc">DataScientist is a Python library in making to ease the life of a Data Scientist.
+              </div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/sidhu1012" target="_blank">sidhu1012</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Data Science</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/RAJAGOPALAN-GANGADHARAN/DConsole"
+                target="_blank">DConsole</a>
+              <div class="repo-desc">Simple Cross Platform Local Logging tool</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/RAJAGOPALAN-GANGADHARAN"
+                  target="_blank">RAJAGOPALAN-GANGADHARAN</a> </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> C++</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> None</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/HarshCasper/Rotten-Scripts"
+                target="_blank">Rotten-Scripts</a>
+              <div class="repo-desc">Scripts that will make you go WOW.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/harshcasper"
+                  target="_blank">harshcasper</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> JS/Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Script</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/PragatiVerma18/Snippet-Share"
+                target="_blank">Snippet-Share</a>
+              <div class="repo-desc">This is a snippet sharing app that can be used to share snippets of code and more.
+              </div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/PragatiVerma18"
+                  target="_blank">PragatiVerma18</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />
+                  Python/HTML/CSS/JS</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/PragatiVerma18/Snappify" target="_blank">Snappify</a>
+              <div class="repo-desc">A Screenshot app with Screenshot API and React js, that create screenshots of
+                websites with the help of the URL that we will paste to the Input field.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/PragatiVerma18"
+                  target="_blank">PragatiVerma18</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/RoboticsClubIITJ/ML-DL-implementation"
+                target="_blank">ML-DL-implementation</a>
+              <div class="repo-desc">An implementation of ML and DL algorithms from scratch in python using nothing but
+                numpy.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/rohansingh9001"
+                  target="_blank">rohansingh9001</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Machine Learning
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/smaranjitghose/awesome-portfolio-websites"
+                target="_blank">awesome-portfolio-websites</a>
+              <div class="repo-desc">An open source project aimed at providing free and beautiful templates to everyone
+                for building their portfolio websites and showcase their work to the world</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/smaranjitghose"
+                  target="_blank">smaranjitghose</a> <a href="https://github.com/anushbhatia"
+                  target="_blank">anushbhatia</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/akshitagupta15june/Face-X" target="_blank">Face-X</a>
+              <div class="repo-desc">Recognition of faces by model training using OPENCV</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june"
+                  target="_blank">akshitagupta15june</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> OpenCV</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/akshitagupta15june/vehicle_speed_estimator"
+                target="_blank">vehicle_speed_estimator</a>
+              <div class="repo-desc">It estimates speed of vehicles</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june"
+                  target="_blank">akshitagupta15june</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> OpenCV</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/akshitagupta15june/lane_detection_opencv"
+                target="_blank">lane_detection_opencv</a>
+              <div class="repo-desc">The lane detection has proved to be an efficient technique to prevent accidents in
+                Intelligent Transportation Systems.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/akshitagupta15june"
+                  target="_blank">akshitagupta15june</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> OpenCV
+                <li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/ankingcodes/codemon" target="_blank">codemon</a>
+              <div class="repo-desc">CLI tool to ace competitive programming contests.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/ankingcodes"
+                  target="_blank">ankingcodes</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> CP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/lordlabuckdas/gtfoo" target="_blank">gtfoo</a>
+              <div class="repo-desc">Go program to fetch gtfobins</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/lordlabuckdas"
+                  target="_blank">lordlabuckdas</a> <a href="https://github.com/7phalange7"
+                  target="_blank">7phalange7</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Go</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Security</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/plazzy99/Heal-O-Chat" target="_blank">Heal-O-Chat</a>
+              <div class="repo-desc">Heal-O-Chat is a Social Media Application for people who have been feeling less
+                motivated in life or are losing hope. </div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/plazzy99" target="_blank">plazzy99</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Java</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/mexili/incogly" target="_blank">incogly</a>
+              <div class="repo-desc">Incog.ly is a peer to peer video conferencing app which keeps your identity
+                anonymous.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/sansyrox" target="_blank">sansyrox</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/mexili/cssify" target="_blank">cssify</a>
+              <div class="repo-desc">CSSify provides a solution to all these problems, by offering a rock solid base
+                which is customisable in all it's aspects. </div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/sansyrox" target="_blank">sansyrox</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/mexili/skribbl" target="_blank">skribbl</a>
+              <div class="repo-desc"></div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/madhavrathi"
+                  target="_blank">madhavrathi</a> <a href="https://github.com/sansyrox" target="_blank">sansyrox</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/abelandcain/Saajha-Kare" target="_blank">Saajha-Kare</a>
+              <div class="repo-desc">Saajha Kare is a file sharing app.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/abelandcain"
+                  target="_blank">abelandcain</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Flutter</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/diyajaiswal11/Bloggitt" target="_blank">Bloggitt</a>
+              <div class="repo-desc">A blogging application for users to post their views with Backend on Django and
+                Frontend on HTML, CSS, Bootstrap.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/diyajaiswal11"
+                  target="_blank">diyajaiswal11</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python/HTML
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/sakshamj74/IPL-Analysis" target="_blank">IPL-Analysis</a>
+              <div class="repo-desc">This project is about analyzing the previous year's IPL data to get some
+                interesting insights</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/sakshamj74" target="_blank">sakshamj74</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Data Science</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/todi-2000/Quiz-App" target="_blank">Quiz-App</a>
+              <div class="repo-desc">A Quiz App where users can register, attempt quiz, view their scores and
+                leaderboard.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/todi-2000" target="_blank">todi-2000</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />
+                  HTML/CSS/Python</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/dheerajkotwani/NewsUp" target="_blank">NewsUp</a>
+              <div class="repo-desc">News Up is an Android Application to fetch Latest Short News in different
+                categories to keep you updated.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/dheerajkotwani"
+                  target="_blank">dheerajkotwani</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Kotlin</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/AbsurdNerd/SimplifyReports"
+                target="_blank">SimplifyReports</a>
+              <div class="repo-desc">SimplifyReport is an Android Application with backend on Django REST Framework
+                which simplifies the process of reporting cases of fire, crimes and calling an ambulance.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/dheerajkotwani"
+                  target="_blank">dheerajkotwani</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Kotlin</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/adityabisoi/github-rest-api-v3"
+                target="_blank">github-rest-api-v3</a>
+              <div class="repo-desc">GitHub REST API playground</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/adityabisoi"
+                  target="_blank">adityabisoi</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> None</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/raghavSharma1472/RecipeBookFlutter"
+                target="_blank">RecipeBookFlutter</a>
+              <div class="repo-desc">App to create a recipe book using Flutter.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/raghavSharma1472"
+                  target="_blank">raghavSharma1472</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> Flutter</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Android</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/sshekhar3000/PLANET_HUNT" target="_blank">PLANET_HUNT</a>
+              <div class="repo-desc">Write 3rd person 3 D arcade game with finished controls and requires a score card
+                and coin collection C# script</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/sshekhar3000"
+                  target="_blank">sshekhar3000</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> C#/Unity</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> GameDev</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/pranalishinde28/BlockChain-Test"
+                target="_blank">BlockChain-Test</a>
+              <div class="repo-desc"></div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/pranalishinde28"
+                  target="_blank">pranalishinde28</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> C++/C</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> None</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/Canvasbird/canvasboard" target="_blank">canvasboard</a>
+              <div class="repo-desc">An interactive board with plugins focusing on replacing the need of multiple
+                platforms for teaching, presenting, managing or explaining your ideas.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/Kajol-Kumari"
+                  target="_blank">Kajol-Kumari</a></div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" />
+                  HTML/JS/TypeScript</li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col card">
+            <div class="nwoc-repo-card">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg" />
+              <a class="repo-title" href="https://github.com/Neilblaze/Anyxz" target="_blank">Anyxz</a>
+              <div class="repo-desc">Ez Video Background Semantic Segmentation.</div>
+              <div class="repo-mentors">Mentors: <a href="https://github.com/Neilblaze" target="_blank">Neilblaze</a>
+              </div>
+              <ul class="repo-stats">
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/file-code.svg" /> HTML/CSS/JS
+                </li>
+                <li><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/tag.svg" /> Web</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <footer>
-            <svg viewBox="0 0 120 28">
-             <defs> 
-                <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
-                  <feColorMatrix in="blur" mode="matrix" values="
+
+        <br>
+        <p>To see previous year's projects, check the <a href="/archive.html">Archive</a>.</p>
+      </div>
+      <footer>
+        <svg viewBox="0 0 120 28">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="
                        1 0 0 0 0  
                        0 1 0 0 0  
                        0 0 1 0 0  
                        0 0 0 13 -9" result="goo" />
-                  <xfeBlend in="SourceGraphic" in2="goo" />
-                </filter>
-                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-              </defs> 
-            
-               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
-               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
-             
-             
-              <g class="gooeff" filter="url(#goo)">
-              <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
-              <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
-              <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
-              <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
-              <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
-              <circle class="drop drop6" cx="26" cy="2.8" r="9.2"  />
-              <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
-              <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
-              <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
-              <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
-              <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
-              <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
-              
-              <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
-                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
-              <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
-              <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
-              <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-             </g>  
-                <!-- g mask="url(#xxx)">
+              <xfeBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            <path id="wave"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs>
+
+          <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+          <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+
+          <g class="gooeff" filter="url(#goo)">
+            <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+            <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+            <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+            <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+            <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+            <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+            <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+            <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+            <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+            <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+            <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+            <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+            <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+            <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+            <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+            <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+            <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+            <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+          </g>
+          <!-- g mask="url(#xxx)">
                 <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
                 </g>
               </g -->
-            
-            </svg>
-            <div class = "footer-text2">
-              <div>
-              © NJACK, IIT Patna 2020
-              <ul class="footer-contact">
-                  <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
-                  <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
-                <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
-              </ul>
-            </div>
+
+        </svg>
+        <div class="footer-text2">
+          <div>
+            © NJACK, IIT Patna 2020
+            <ul class="footer-contact">
+              <li><a href="mailto:njack@iitp.ac.in?subject=[NWoC]" target="_blank">njack@iitp.ac.in</a></li>
+              <li><a href="mailto:njack.iitp@gmail.com?subject=[NWoC]" target="_blank">njack.iitp@gmail.com</a></li>
+              <li><a href="https://www.facebook.com/njack.iitp/" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com/njackiitp" target="_blank">Twitter</a></li>
+              <li><a href="https://github.com/Njack-IITP/" target="_blank">GitHub</a></li>
+            </ul>
           </div>
-              <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
-          </footer>
-        <!-- <footer class="mdl-mini-footer">
+        </div>
+        <!-- <div>done with fun - by &copy;<a href="www.chaba.de">Uwe Chardon</a></div> -->
+      </footer>
+      <!-- <footer class="mdl-mini-footer">
           <div class="nwoc-footer">
             <div class="mdl-mini-footer__left-section">
               <div class="mdl-logo">© NJACK, IIT Patna 2020</div>
@@ -679,8 +793,27 @@
             </div>
           </div>
         </footer> -->
-        
-      </main>
-    </div>
-  </body>
+
+    </main>
+  </div>
+</body>
+<script type="text/javascript">
+  function mysearchFunction() {
+    let input = document.getElementById('searchBar').value;
+    input = input.toUpperCase();
+    let repoCard = document.getElementsByClassName('nwoc-repo-card');
+    let card = document.getElementsByClassName('card');
+    let list = document.getElementsByClassName('repo-stats');
+    // console.log(card);
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].innerHTML.toUpperCase().includes(input)) {
+        repoCard[i].style.display = "";
+        card[i].style.display = "";
+      } else {
+        repoCard[i].style.display = "none";
+        card[i].style.display = "none";
+      }
+    }
+  } 
+</script>
 </html>
