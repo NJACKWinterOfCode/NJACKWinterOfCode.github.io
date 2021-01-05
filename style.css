@@ -331,13 +331,22 @@ details summary::-webkit-details-marker {
 }
 
 .archive summary{
-  display: inline;
-  /* border: 2px solid black; */
+  width: 30%;
   margin-bottom: 12px;
-  padding: 5px;
-  /* border-radius: 4px; */
+  padding: 8px;
   outline: none;
   cursor: pointer;
+  font-size: 16px;
+  background-color: #b9ebfa;
+  box-shadow: 4px 3px 4px #a3cbf2;
+  transform: scale(.98);
+  transition: all .3s ease;
+}
+
+.archive summary:hover{
+  transform: scale(1.05);
+  background-color: #9ee1f9;
+  box-shadow: 5px 6px 8px #a3cbf2;
 }
 
 /* Contact Page Start Here */
