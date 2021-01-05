@@ -329,8 +329,8 @@ a {
 /* Contact Page Start Here */
 .nwoc-contact {
   width: 160px;
-  text-align: center;
 }
+
 .contact-heading{
   text-align: center;
 }
@@ -356,7 +356,7 @@ img.nwoc-contact{
 }
 
 .social-links a{
-  font-size: 25px;
+  font-size: 1.5em;
   padding: 12px;
   background-color: white;
   border: 2px solid rgb(167, 218, 233);
@@ -366,30 +366,35 @@ img.nwoc-contact{
   transition: all 0.1s ease;
 }
 
+.member-links a{
+  font-size: 16px;
+  padding: 8px;
+}
+
 .social-links a:hover{
   transform: scale(1.1);
   border: 2px solid rgb(129, 204, 227);
 }
 
-.social-links .fa-facebook-f{
+.fa-facebook-f{
   color: #3b5998;
-  margin: 2px 5px;
+  margin: 1px .3em;
 }
 
-.social-links .fa-twitter{
+.fa-twitter{
   color: #1DA1F2;
 }
 
-.social-links .fa-github{
+.fa-github{
   color: black;
 }
 
-.social-links .fa-gitter{
-  color: #e6e8fa;
+.fa-gitter{
+  color: #35dd02;
   margin: 1px 2px;
 }
 
-.social-links .fa-envelope{
+.fa-envelope{
   color: #ca6363;
 }
 
