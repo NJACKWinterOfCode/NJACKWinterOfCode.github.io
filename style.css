@@ -26,8 +26,10 @@ html {
   color: white;
   font-color: blue;
   cursor: pointer;
-  padding: 14px;
-  border-radius: 30%;
+  padding: 6px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
 .fa-angle-double-up {
@@ -128,6 +130,13 @@ a {
 @media screen and (min-width: 961px) {
   .mdl-layout--no-desktop-drawer-button .mdl-layout__header-row {
     padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  #myBtn {
+    bottom: 20px;
+    right: 15px;
   }
 }
 
