@@ -326,6 +326,21 @@ a {
   margin: 0 auto;
 }
 
+/* Archive Page Start Her*/
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.archive summary{
+  display: inline;
+  /* border: 2px solid black; */
+  margin-bottom: 12px;
+  padding: 5px;
+  /* border-radius: 4px; */
+  outline: none;
+  cursor: pointer;
+}
+
 /* Contact Page Start Here */
 .nwoc-contact {
   width: 160px;
