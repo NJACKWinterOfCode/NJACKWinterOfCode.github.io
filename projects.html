@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
     <link rel="stylesheet" href="/materialjs/material.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script defer src="/materialjs/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -155,6 +156,9 @@
                 </ul>
               </div>
             </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i></button>
+
             <div class="mdl-cell mdl-cell--6-col">
               <div class="nwoc-repo-card">
                 <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/mark-github.svg"/>
@@ -683,4 +687,25 @@
       </main>
     </div>
   </body>
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </html>

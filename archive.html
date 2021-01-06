@@ -15,15 +15,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Archive | NJACK Winter of Code</title>
-
-  <meta name="description"
-    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience." />
-  <meta NAME="Keywords" CONTENT="Njack,winter,code,nwoc,iit,iitp,patna,indian institute of technology">
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="NJACK Winter of Code">
-  <meta itemprop="description"
-    content="NWoC (NJACK Winter of Code) is a program by NJACK (the official computer club of IIT Patna) that helps students understand the paradigm of Open Source contribution and gives them real world software development experience.">
-  <meta itemprop="image" content="https://njackwinterofcode.github.io/nwocLogo.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://njackwinterofcode.github.io/archive.html"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
+    <link rel="stylesheet" href="/materialjs/material.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script defer src="/materialjs/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
@@ -1703,9 +1702,31 @@
             </div>
           </div>
         </footer> -->
+        
+      </main>
+    </div>
+  </body>
 
-    </main>
-  </div>
-</body>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </html>
