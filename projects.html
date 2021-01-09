@@ -107,6 +107,8 @@
 
          <p style="text-align:justify">These are the selected projects for NWoC 2020. Please refer to the project Readme to get the Communication Channel Link of the project to be in touch with the mentor. Make sure to visit the <a href="https://github.com/NJACKWinterOfCode/Get-Started-NWoC20" target="_blank">Getting Started</a> repository to know the important rules and guidelines that you need to follow.</p>
                     
+         <input type="search" name="searchBar" id="searchBar" onkeyup="mysearchFunction()" placeholder="Search for tags (like:html,css,web)">
+         
           <div class="mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--6-col">
               <div class="nwoc-repo-card">
@@ -707,5 +709,24 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+</script>
+<script type="text/javascript">
+  function mysearchFunction() {
+    let input = document.getElementById('searchBar').value;
+    input = input.toUpperCase();
+    let repoCard = document.getElementsByClassName('nwoc-repo-card');
+    let card = document.getElementsByClassName('mdl-cell--6-col');
+    let list = document.getElementsByClassName('repo-stats');
+    // console.log(card);
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].innerHTML.toUpperCase().includes(input)) {
+        repoCard[i].style.display = "";
+        card[i].style.display = "";
+      } else {
+        repoCard[i].style.display = "none";
+        card[i].style.display = "none";
+      }
+    }
+  } 
 </script>
 </html>

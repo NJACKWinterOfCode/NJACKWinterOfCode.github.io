@@ -301,8 +301,22 @@ a {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+/* Search Bar */
+#searchBar{
+  background-color: white;
+  border: none;
+  border: 2px solid #a6d2ff;
+  display:block;
+  width: 95%;
+  margin: 20px auto;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: 6px 6px 3px #45889b;
+}
 
 .nwoc-repo-card {
+  display: block;
   margin-bottom: 10px;
   padding: 18px;
   max-width: 328px;
@@ -311,6 +325,13 @@ a {
   border-radius: 5px;
   position: relative;
   box-shadow: 5px 7px 8px rgb(65 159 159);
+  transform: scale(.99);
+  transition: all .2s ease-in-out;
+}
+
+.nwoc-repo-card:hover{
+  box-shadow: 8px 10px 12px rgb(65 159 159);
+  transform: scale(1);
 }
 
 .nwoc-repo-card .repo-title {
@@ -362,6 +383,30 @@ a {
 .nwoc-footer {
   width: 750px;
   margin: 0 auto;
+}
+
+/* Archive Page Start Her*/
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.archive summary{
+  width: 30%;
+  margin-bottom: 12px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #b9ebfa;
+  box-shadow: 4px 3px 4px #a3cbf2;
+  transform: scale(.98);
+  transition: all .3s ease;
+}
+
+.archive summary:hover{
+  transform: scale(1.05);
+  background-color: #9ee1f9;
+  box-shadow: 5px 6px 8px #a3cbf2;
 }
 
 /* Contact Page Start Here */
