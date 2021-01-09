@@ -685,6 +685,11 @@ svg {
   text-align: center;
 }
 
+.footer-contact{
+  background-color: #4578e3;
+  margin: 0;
+}
+
 .footer-contact a{
   text-decoration: none;
   color:white;
