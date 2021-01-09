@@ -136,8 +136,8 @@ a {
 
 @media screen and (max-width: 961px) {
   #myBtn {
-    bottom: 38px;
-    right: 20px;
+    bottom: 15px;
+    right: 9px;
   }
 }
 
@@ -688,6 +688,7 @@ svg {
 .footer-contact{
   background-color: #4578e3;
   margin: 0;
+  padding: 12px 25px;
 }
 
 .footer-contact a{
@@ -698,7 +699,7 @@ svg {
   text-decoration: none;
   color:white;
   display:inline;
-  padding:10px;
+  margin:12px;
   font-size:1.2em;
 }
 
