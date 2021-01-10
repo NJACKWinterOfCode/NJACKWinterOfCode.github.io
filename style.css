@@ -145,7 +145,7 @@ a {
   .mdl-layout__header-row {
     padding: 0 10px 0 20px;
   }
-  
+
   .nwoc-menu-item, .nwoc-drawer-item {
     padding: 12px 15px !important;
   }
@@ -423,7 +423,7 @@ details summary::-webkit-details-marker {
   margin-bottom: 0;
   font-size: 18px;
   text-align: center;
-} 
+}
 
 img.nwoc-contact{
   display:block;
@@ -432,7 +432,7 @@ img.nwoc-contact{
 }
 
 .social-links{
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -504,7 +504,7 @@ img.nwoc-contact{
     width: 300px;
     left: calc(50vw - 150px);
   }
-  
+
   .nwoc-header-sponsors img {
     height: 60px;
   }
@@ -622,7 +622,7 @@ svg {
   transform-origin: 50% 100%;
 }
 /* .drop1 {
-  
+
 } */
 .drop2 {
   animation-delay: 3s;
@@ -657,19 +657,19 @@ svg {
 }
 @keyframes drop {
   0% {
-    transform: translateY(25px); 
+    transform: translateY(25px);
   }
   30% {
     transform: translateY(-10px) scale(.1);
   }
   30.001% {
-    transform: translateY(25px) scale(1); 
+    transform: translateY(25px) scale(1);
   }
   70% {
-    transform: translateY(25px); 
+    transform: translateY(25px);
   }
-  100% { 
-    transform: translateY(-10px) scale(.1);  
+  100% {
+    transform: translateY(-10px) scale(.1);
   }
 }
 @keyframes wave {
@@ -843,6 +843,7 @@ footer{
   width: 100%;
   bottom: 0;
   left: 0;
+  box-sizing: border-box;
 }
 
 footer p {
@@ -928,12 +929,12 @@ footer p strong {
     }
 }
 
-  
+
   .snowflakes {
     width:90%; height: 100%;
     position: absolute; top: -90px; left: 10%;
   }
-  
+
   .snowflakes i, .snowflakes i:after, .snowflakes i:before { background: white; }
   .snowflakes i {
     display: inline-block;
@@ -952,7 +953,7 @@ footer p strong {
     -webkit-transform: rotate(120deg);
   }
   .snowflakes i:before { -webkit-transform: rotate(240deg); }
-  
+
   @-webkit-keyframes snowflakes {
     0% {
       -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(0.6);
@@ -961,28 +962,28 @@ footer p strong {
       -webkit-transform: translate3d(0, calc(100vh + 400px), 0px) rotate(360deg) scale(0.6);
     };
   }
-  
+
   .snowflakes i:nth-child(3n) {
     width: 100px; height: 4px;
     -webkit-animation-duration: 6s;
     -webkit-animation-iteration-count: 30;
     /* -webkit-transform-origin: right -45px; */
   }
-  
+
   .snowflakes i:nth-child(3n+1) {
     width: 24px; height: 6px;
     -webkit-animation-duration: 8s;
     -webkit-animation-iteration-count: 45;
     /* -webkit-transform-origin: right -30px; */
   }
-  
+
   .snowflakes i:nth-child(3n+2) {
     width: 32px; height: 8px;
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: 60;
     /* -webkit-transform-origin: right -15px; */
   }
-    
+
   /* different delays so they don't all start at the same time */
   .snowflakes i:nth-child(7n) {
     opacity:.3;
