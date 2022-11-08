@@ -154,7 +154,7 @@ a {
 .nwoc-landing-header {
   background-image: url("./images/winter_back_enhanced_colors_moderate.jpg");
   background-color: #90CAF9;
-  height: 715px;
+  height: 515px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,7 +164,7 @@ a {
   position: absolute;
   width: 400px;
   left: calc(50vw - 200px);
-  top: 75px;
+  top: 155px;
 }
 
 .nwoc-slogan p {
