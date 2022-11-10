@@ -163,8 +163,15 @@ a {
 .nwoc-big-logo {
   position: absolute;
   width: 400px;
-  left: calc(50vw - 200px);
+  left: calc(50vw - 400px);
   top: 155px;
+}
+
+.codepeak-big-logo {
+  position: absolute;
+  width: 400px;
+  left: calc(50vw - 0px);
+  top: 230px;
 }
 
 .nwoc-slogan p {
